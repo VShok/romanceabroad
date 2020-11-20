@@ -1,8 +1,13 @@
 import org.openqa.selenium.By;
 
 public class Locators {
+    // Main Page
+
+    public static final By FRAME_HOME_PAGE_YOUTUBE = By.xpath("//iframe[@src='https://www.youtube.com/embed/RRECuJzm3IY?start=85']");
+    public static final By BUTTON_HOME_PAGE_YOUTUBE = By.xpath("//button[@class='ytp-large-play-button ytp-button']");
 
     // Tour to Ukraine Page
+
     public static final By LINK_TOUR_UKRAINE = By.xpath("//a[@href='https://romanceabroad.com/store/sweets/20-tour_to_ukraine']");
 
     // Gifts Page
@@ -25,9 +30,12 @@ public class Locators {
     public static final By BUTTON_NEXT = By.xpath("//button[@data-action='next-page'][text()='Next']");
     public static final By TEXT_FIELD_USERNAME = By.cssSelector("#nickname");
     public static final By TEXT_FIELD_PHONE = By.cssSelector("input[name='data[phone]']");
+
     // Search Page
 
     public static final By LINK_PRETTY_WOMAN = By.xpath("//a[@href='https://romanceabroad.com/users/search']");
+    public static final By TABLE_AGE_MIN_MAX = By.xpath("//div[@class='search-box advanced']");
+    public static final By FILTER_MAX_AGE = By.xpath("//select[@id='age_max']");
 
     // Sigh In Form
 
@@ -37,5 +45,6 @@ public class Locators {
     public static final By TITLE_LOGIN = By.xpath("//div[@class='pg-modal']//h1");
 
     // Blog Page
+
     public static final By LINK_BLOG = By.xpath("//a[@href='https://romanceabroad.com/content/view/blog']");
 }
