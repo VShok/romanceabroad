@@ -3,7 +3,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class MainPageTests extends BaseUI {
+public class MainTests extends BaseUI {
 
     @Test
     public void testMainPage () {

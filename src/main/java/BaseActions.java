@@ -5,7 +5,7 @@ public class BaseActions {
     protected WebDriver driver;
     protected WebDriverWait wait;
 
-    public BaseActions(WebDriver driver, WebDriverWait wait){
+    public BaseActions(WebDriver driver, WebDriverWait wait) {
 
         this.driver = driver;
         this.wait = wait;

@@ -1,3 +1,4 @@
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,14 +12,9 @@ public class BaseUI {
 
     WebDriver driver;
     WebDriverWait wait;
+    MainPage mainPage;
     String mainUrl = "https://romanceabroad.com/";
 
-    public void getDropDownListByIndex(WebElement element, int index) {
-
-       Select select = new Select(element);
-       select.selectByIndex(index);
-
-    }
     @BeforeMethod
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "chromedriver");
@@ -32,5 +28,17 @@ public class BaseUI {
     @AfterMethod
     public void afterActions() {
      //   driver.quit();
+    }
+
+    public static String generateNewNumber(String name, int length){
+
+        return name + RandomStringUtils.random(length, "172984757");
+
+    }
+
+    public void getDropDownListByIndex(WebElement element, int index) {
+
+        Select select = new Select(element);
+        select.selectByIndex(index);
     }
 }
