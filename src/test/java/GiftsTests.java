@@ -10,9 +10,7 @@ public class GiftsTests extends BaseUI {
     @Test
     public void testGifts () {
 
-        WebElement link_Gifts = driver.findElement(Locators.LINK_GIFTS);
-        link_Gifts.click();
-
+        mainPage.clickGiftsLink();
         currentUrlSearch = driver.getCurrentUrl();
         System.out.println(currentUrlSearch);
 

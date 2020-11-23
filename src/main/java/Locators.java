@@ -29,7 +29,14 @@ public class Locators {
     public static final By TEXT_FIELD_PASSWORD = By.cssSelector("input#password");
     public static final By BUTTON_NEXT = By.xpath("//button[@data-action='next-page'][text()='Next']");
     public static final By TEXT_FIELD_USERNAME = By.cssSelector("#nickname");
+    public static final By BUTTON_DAY_SELECT = By.cssSelector("div#daySelect");
+    public static final By SIXTH_DAY_SELECT = By.xpath("//li[@data-handler='selectDay']//a[@data-value='6']");
+    public static final By BUTTON_MONTH_SELECT = By.cssSelector("div#monthSelect");
+    public static final By JUNE_MONTH_SELECT = By.xpath("//li[@data-handler='selectMonth']//a[@data-value='5']");
+    public static final By BUTTON_YEAR_SELECT = By.cssSelector("div#yearSelect");
+    public static final By NINETEEN_EIGHTY_NINE_YEAR_SELECT = By.xpath("//li[@data-handler='selectYear']//a[@data-value='1989']");
     public static final By TEXT_FIELD_PHONE = By.cssSelector("input[name='data[phone]']");
+    public static final By BUTTON_CONFIRMATION = By.cssSelector("input#confirmation");
 
     // Search Page
 

@@ -5,4 +5,5 @@ public class HowWeWorkPage extends BaseActions {
     public HowWeWorkPage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
     }
+
 }

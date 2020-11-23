@@ -9,8 +9,7 @@ public class BlogTests extends BaseUI {
     @Test
     public void testBlog () {
 
-        WebElement link_Blog = driver.findElement(Locators.LINK_BLOG);
-        link_Blog.click();
+        mainPage.clickBlogLink();
 
         currentUrlSearch = driver.getCurrentUrl();
         System.out.println(currentUrlSearch);
