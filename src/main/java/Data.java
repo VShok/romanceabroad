@@ -2,6 +2,10 @@
 
 public class Data {
 
+    // Main URL
+
+    public static final String MAIN_URL = "https://romanceabroad.com/";
+
     // Registration Data
     public static final String email = "grounded@gmail.com";
     public static final String password = "Crazyeagle45!";
@@ -21,4 +25,14 @@ public class Data {
 
     // Login Data
     public static final String expectedLogInTitle = "Login";
+
+    // Main Page Titles
+
+    public static final String titleHome = "HOME";
+    public static final String titleBlog = "BLOG";
+    public static final String titleGifts = "GIFTS";
+
+    // Expected Titles
+
+    public static final String expectedTitleHowItWorksPage = "Ukrainian women for marriage";
 }

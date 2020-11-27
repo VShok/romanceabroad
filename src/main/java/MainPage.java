@@ -65,6 +65,5 @@ public class MainPage extends BaseActions {
         driver.findElement(Locators.BUTTON_YEAR_SELECT).click();
         driver.findElement(Locators.NINETEEN_EIGHTY_NINE_YEAR_SELECT).click();
         driver.findElement(Locators.TEXT_FIELD_PHONE).sendKeys(Data.phoneNumber);
-        driver.findElement(Locators.BUTTON_CONFIRMATION).click();
     }
 }

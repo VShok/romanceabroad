@@ -14,7 +14,7 @@ public class Locators {
 
     public static final By LINK_GIFTS = By.xpath("//a[@href='https://romanceabroad.com/store/category-sweets']");
 
-    // How We Work Page
+    // How It Works Page
 
     public static final By LINK_HOW_WE_WORKS = By.xpath("//a[@href='https://romanceabroad.com/content/view/how-it-works']");
 
