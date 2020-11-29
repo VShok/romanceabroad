@@ -35,4 +35,5 @@ public class Data {
     // Expected Titles
 
     public static final String expectedTitleHowItWorksPage = "Ukrainian women for marriage";
+    public static final String expectedTitlePrettyWomen = "Single Ukrainian women online";
 }

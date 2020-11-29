@@ -1,4 +1,4 @@
-import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -16,12 +16,14 @@ public class PrettyWomenTests extends BaseUI {
         System.out.println(currentUrlSearch);
 
         Assert.assertEquals(Data.expectedPrettyWomenUrl,currentUrlSearch);
-        prettyWomenPage.changeMaxAgePrettyWomen();
+
+        WebElement maxAge = driver.findElement(Locators.FILTER_MAX_AGE);
+        prettyWomenPage.getDropDownListByIndex(maxAge,8);
     }
     @Test
     public  void testSearchButton() {
         mainPage.clickPrettyWomenLink();
-        if(driver.findElement(By.xpath("//input[@value='Search']")).isDisplayed()) {
+        if(driver.findElement(Locators.TEXT_FIELD_PRETTY_WOMEN_SEARCH).isDisplayed()) {
             System.out.println("Clickable");
         } else {
             Assert.assertFalse(false, "Not clickable");

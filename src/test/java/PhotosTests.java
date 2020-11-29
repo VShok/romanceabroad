@@ -1,5 +1,3 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -23,7 +21,7 @@ public class PhotosTests extends BaseUI {
     @Test
     public void clickAddPhoto() {
         mainPage.clickPhotosLink();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(), 'Add photo')]")));
-        Assert.assertTrue(driver.findElement(By.xpath("//button[contains(text(), 'Add photo')]")).isDisplayed(), "Not Displayed");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.BUTTON_ADD_PHOTOS));
+        Assert.assertTrue(driver.findElement(Locators.BUTTON_ADD_PHOTOS).isDisplayed(), "Not Displayed");
     }
 }

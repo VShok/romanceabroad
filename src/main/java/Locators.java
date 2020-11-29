@@ -17,10 +17,12 @@ public class Locators {
     // How It Works Page
 
     public static final By LINK_HOW_WE_WORKS = By.xpath("//a[@href='https://romanceabroad.com/content/view/how-it-works']");
+    public static final By BLOGS_PAGES = By.xpath("//li//div[@class='fleft']");
 
     // Photo Page
 
     public static final By LINK_PHOTOS = By.xpath("//a[@href='https://romanceabroad.com/media/index']");
+    public static final By BUTTON_ADD_PHOTOS = By.xpath("//button[contains(text(), 'Add photo')]");
 
     // Registration Page
 
@@ -38,11 +40,12 @@ public class Locators {
     public static final By TEXT_FIELD_PHONE = By.cssSelector("input[name='data[phone]']");
     public static final By BUTTON_CONFIRMATION = By.cssSelector("input#confirmation");
 
-    // Search Page
+    // Pretty Women Page
 
     public static final By LINK_PRETTY_WOMAN = By.xpath("//a[@href='https://romanceabroad.com/users/search']");
     public static final By TABLE_AGE_MIN_MAX = By.xpath("//div[@class='search-box advanced']");
     public static final By FILTER_MAX_AGE = By.xpath("//select[@id='age_max']");
+    public static final By TEXT_FIELD_PRETTY_WOMEN_SEARCH = By.xpath("//input[@value='Search']") ;
 
     // Sigh In Form
 
@@ -54,4 +57,10 @@ public class Locators {
     // Blog Page
 
     public static final By LINK_BLOG = By.xpath("//a[@href='https://romanceabroad.com/content/view/blog']");
+    public static final By BLOGS_BLOG_PAGE = By.xpath("//div[@class='info-content-block wysiwyg']//ul//li/a");
+
+    //Titles
+    public static final By CURRENT_TITLE = By.xpath("//h1");
+    public static final By TAB_OF_MAIN_PAGE = By.xpath("//ul[@class='navbar-nav']//li");
+    public static final By IMAGES = By.xpath("//a[@class='g-pic-border g-rounded']");
 }
