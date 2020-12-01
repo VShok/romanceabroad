@@ -24,9 +24,9 @@ public class PrettyWomenTests extends BaseUI {
     public  void testSearchButton() {
         mainPage.clickPrettyWomenLink();
         if(driver.findElement(Locators.TEXT_FIELD_PRETTY_WOMEN_SEARCH).isDisplayed()) {
-            System.out.println("Clickable");
+            System.out.println(Data.clicable);
         } else {
-            Assert.assertFalse(false, "Not clickable");
+            Assert.assertFalse(false, Data.notClicable);
         }
     }
 }

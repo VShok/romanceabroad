@@ -5,6 +5,7 @@ public class Locators {
 
     public static final By FRAME_HOME_PAGE_YOUTUBE = By.xpath("//iframe[@src='https://www.youtube.com/embed/RRECuJzm3IY?start=85']");
     public static final By BUTTON_HOME_PAGE_YOUTUBE = By.xpath("//button[@class='ytp-large-play-button ytp-button']");
+    public static final By TITLE_HOME_PAGE = By.xpath("//a[contains(text(),'HOME')]");
 
     // Tour to Ukraine Page
 

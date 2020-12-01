@@ -2,13 +2,27 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.util.concurrent.TimeUnit;
 
 public class MainPage extends BaseActions {
 
     public MainPage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
+    }
+
+    public String getCurrentTitleTextHomePage() {
+        String text = driver.findElement(Locators.TITLE_HOME_PAGE).getText();
+        return text;
+    }
+
+    public String getCurrentTitleHomePages(int index) {
+        String info = driver.findElements(Locators.TAB_OF_MAIN_PAGE).get(index).getText();
+        System.out.println(info);
+        return info;
+    }
+    public String getTitle() {
+        String actualTitle = driver.findElement(Locators.CURRENT_TITLE).getText();
+        return actualTitle;
     }
 
     public void clickHowWeWorkLink() {

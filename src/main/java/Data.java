@@ -36,4 +36,22 @@ public class Data {
 
     public static final String expectedTitleHowItWorksPage = "Ukrainian women for marriage";
     public static final String expectedTitlePrettyWomen = "Single Ukrainian women online";
+
+    // Clicable
+    public static final String notClicable = "Not clickable";
+    public static final String clicable = "clickable";
+
+    // Checkboxes
+
+    public static final String checkbox = "Checkbox is selected!";
+
+    // Displayed
+
+    public static final String notDisplayed = "Not Displayed";
+
+    // Matched
+
+    public static final String matched = "There is a match";
+    public static final String notMatched = "There is no a match";
+
 }

@@ -1,8 +1,7 @@
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
-import org.testng.annotations.Test;;
+import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -21,28 +20,28 @@ public class MainTests extends BaseUI {
     // List<int>
     @Test
     public void checkCountTitles() {
-        List<WebElement> links = driver.findElements(By.xpath("//ul[@class='navbar-nav']//li"));
+        List<WebElement> links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
         System.out.println(links.size());
         List<Integer> count = new ArrayList<>(Arrays.asList(4,7,8,9,10));
         for (int i = 0; i < count.size(); i++) {
             if (count.get(i) == links.size()) {
-                System.out.println("There is a match");
+                System.out.println(Data.matched);
             }
         }
     }
     // List<String>
     @Test
     public void checkTitles() {
-        WebElement title = driver.findElement(By.xpath("//a[contains(text(),'HOME')]"));
+        WebElement title = driver.findElement(Locators.TITLE_HOME_PAGE);
         wait.until(ExpectedConditions.visibilityOfAllElements(title));
-        String mainTitles = title.getText();
+        String mainTitles = mainPage.getCurrentTitleTextHomePage();
         System.out.println(mainTitles);
-        List<String> titles= new ArrayList<>(Arrays.asList(Data.titleHome, Data.titleBlog, Data.titleGifts));
+        List<String> titles = new ArrayList<>(Arrays.asList(Data.titleHome, Data.titleBlog, Data.titleGifts));
 
         if(titles.contains(mainTitles)) {
-            System.out.println("There is a match");
+            System.out.println(Data.matched);
         } else {
-            Assert.fail("There is no a match");
+            Assert.fail(Data.notMatched);
         }
 
     }

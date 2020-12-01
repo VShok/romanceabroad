@@ -1,13 +1,12 @@
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
-
 import java.util.List;
 
 
 public class BlogTests extends BaseUI {
     String currentUrlSearch;
-    // List<WebElement>
+
     @Test
     public void testBlog () {
         mainPage.clickBlogLink();
@@ -15,8 +14,7 @@ public class BlogTests extends BaseUI {
         List <WebElement> blogs = driver.findElements(Locators.BLOGS_BLOG_PAGE);
         System.out.println(blogs.size());
         for (int i = 0; i < blogs.size(); i++) {
-            String info = blogs.get(i).getText();
-            System.out.println(info);
+            blogPage.getCurrentTextBlog(i);
             blogs.get(i).click();
             driver.get(Data.expectedBlogUrl);
             currentUrlSearch = driver.getCurrentUrl();

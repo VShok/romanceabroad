@@ -1,7 +1,6 @@
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.openqa.selenium.By;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -40,7 +39,7 @@ public class Conditions extends BaseUI {
         if (!requirement) {
             System.out.println("Boolean is true!");
         } else {
-            Assert.fail("Booleam is false");
+            Assert.fail("Boolean is false");
         }
     }
 
@@ -51,21 +50,20 @@ public class Conditions extends BaseUI {
         WebElement checkbox = driver.findElement(Locators.BUTTON_CONFIRMATION);
         if (!checkbox.isSelected()) {
             checkbox.click();
-            System.out.println("Checkbox is selected!");
+            System.out.println(Data.checkbox);
         }
     }
 
 
     @Test
     public void test5() {
-        List<WebElement> links = driver.findElements(By.xpath("//ul[@class='navbar-nav']//li"));
+        List<WebElement> links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
         System.out.println(links.size());
         for (int i = 0; i < links.size(); i++) {
-            String info = links.get(i).getText();
-            System.out.println(info);
+            mainPage.getCurrentTitleHomePages(i);
             links.get(i).click();
             driver.get(Data.MAIN_URL);
-            links = driver.findElements(By.xpath("//ul[@class='navbar-nav']//li"));
+            links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
         }
     }
 
@@ -90,25 +88,22 @@ public class Conditions extends BaseUI {
 
     @Test
     public void test7() {
-        String actualTitle;
         String actualURLPrettyWomen;
-        String info;
         List<WebElement> links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
         System.out.println(links.size());
 
         for (int i = 0; i < links.size(); i++) {
-            info = links.get(i).getText();
-            System.out.println(info);
+            mainPage.getCurrentTitleHomePages(i);
             //links.get(i).click();
             mainPage.ajaxClick(links.get(i));
-            if (info.contains("WORK")) {
-                actualTitle = driver.findElement(Locators.CURRENT_TITLE).getText();
-                Assert.assertEquals(actualTitle, Data.expectedTitleHowItWorksPage);
+            if (mainPage.getCurrentTitleHomePages(i).contains("WORK")) {
+                mainPage.getTitle();
+                Assert.assertEquals(mainPage.getTitle(), Data.expectedTitleHowItWorksPage);
             }
-            if (info.contains("PRETTY WOMEN")) {
-                actualTitle = driver.findElement(Locators.CURRENT_TITLE).getText();
+            if (mainPage.getCurrentTitleHomePages(i).contains("PRETTY WOMEN")) {
+                mainPage.getTitle();
                 actualURLPrettyWomen = driver.getCurrentUrl();
-                Assert.assertEquals(Data.expectedTitlePrettyWomen, actualTitle);
+                Assert.assertEquals(Data.expectedTitlePrettyWomen, mainPage.getTitle());
                 Assert.assertEquals(Data.expectedPrettyWomenUrl, actualURLPrettyWomen);
                 driver.findElement(Locators.IMAGES).isDisplayed();
                 if(actualURLPrettyWomen.contains("#")) {

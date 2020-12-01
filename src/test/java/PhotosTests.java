@@ -22,6 +22,6 @@ public class PhotosTests extends BaseUI {
     public void clickAddPhoto() {
         mainPage.clickPhotosLink();
         wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.BUTTON_ADD_PHOTOS));
-        Assert.assertTrue(driver.findElement(Locators.BUTTON_ADD_PHOTOS).isDisplayed(), "Not Displayed");
+        Assert.assertTrue(driver.findElement(Locators.BUTTON_ADD_PHOTOS).isDisplayed(), Data.notDisplayed);
     }
 }

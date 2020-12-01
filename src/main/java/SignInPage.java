@@ -13,4 +13,10 @@ public class SignInPage extends BaseActions {
         WebElement linkLoginPassword = driver.findElement(Locators.LINK_LOGIN_PASSWORD);
         linkLoginPassword.sendKeys(Data.password);
     }
+
+    public String getCurrentTitle () {
+        String title = driver.findElement(Locators.TITLE_LOGIN).getText();
+        System.out.println(title);
+        return title;
+    }
 }

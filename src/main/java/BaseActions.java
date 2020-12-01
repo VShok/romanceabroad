@@ -43,6 +43,8 @@ public class BaseActions {
         select.selectByValue(value);
     }
 
+    // Clicks
+
     public void ajaxClick(WebElement element) {
         ((JavascriptExecutor) driver).executeScript("argument[0].scrollIntoView(true);", element);
         wait.until(ExpectedConditions.elementToBeClickable(element));
