@@ -1,4 +1,3 @@
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -17,8 +16,7 @@ public class PrettyWomenTests extends BaseUI {
 
         Assert.assertEquals(Data.expectedPrettyWomenUrl,currentUrlSearch);
 
-        WebElement maxAge = driver.findElement(Locators.FILTER_MAX_AGE);
-        prettyWomenPage.getDropDownListByIndex(maxAge,8);
+        prettyWomenPage.getDropDownListByIndex(Locators.FILTER_MAX_AGE,8);
     }
     @Test
     public  void testSearchButton() {
