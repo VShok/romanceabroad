@@ -5,8 +5,12 @@ import org.testng.annotations.Test;
 public class PrettyWomenTests extends BaseUI {
 
     String currentUrlSearch;
+    public static final boolean testCase2 = true;
+    public static final boolean testCase3 = true;
+    public static final boolean testCase4 = true;
 
-    @Test
+
+    @Test(priority = 1, enabled = testCase2, groups = {"user", "admin"})
     public void testPrettyWoman() {
 
         mainPage.clickPrettyWomenLink();
@@ -18,7 +22,7 @@ public class PrettyWomenTests extends BaseUI {
 
         prettyWomenPage.getDropDownListByIndex(Locators.FILTER_MAX_AGE,8);
     }
-    @Test
+    @Test(priority = 2, enabled = testCase3, groups = {"user", "admin"})
     public  void testSearchButton() {
         mainPage.clickPrettyWomenLink();
         if(driver.findElement(Locators.TEXT_FIELD_PRETTY_WOMEN_SEARCH).isDisplayed()) {
@@ -26,5 +30,13 @@ public class PrettyWomenTests extends BaseUI {
         } else {
             Assert.assertFalse(false, Data.notClicable);
         }
+    }
+
+    @Test(priority = 3, enabled = testCase4, groups = {"user", "admin"})
+    public void testThirdPage() {
+        mainPage.clickPrettyWomenLink();
+        mainPage.scrollToBottomOfPage();
+        mainPage.javaWait(2500);
+        mainPage.perfomClick(driver.findElement(Locators.THIRD_PAGE_PRETTY_WOMEN));
     }
 }

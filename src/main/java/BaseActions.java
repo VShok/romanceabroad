@@ -44,11 +44,6 @@ public class BaseActions {
         select.selectByVisibleText(text);
     }
 
-    public void getDropDownListByText(WebElement element, String text) {
-        Select select = new Select(element);
-        select.selectByVisibleText(text);
-    }
-
     public void getDropDownListByValue(By locator, String value) {
         Select select = new Select(driver.findElement(locator));
         select.selectByValue(value);

@@ -1,7 +1,80 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="TestSuite" parallel="none" >
-    <test name="FirefoxTestCases">
+
+
+
+    <test name="ChromeTestCases">
+        <parameter name="browser" value="chrome"/>
+
+        <groups>
+            <run>
+                <exclude name = "firefox"  />
+                <include name = "user"    />
+                <include name = "admin"    />
+            </run>
+        </groups>
+
+        <classes>
+            <class name ="BlogTests">
+                <methods>
+                    <include name = ".*TestCase16.*" />
+                </methods>
+            </class>
+            <class name ="GiftsTests">
+                <methods>
+                    <include name = ".*TestCase15.*" />
+                </methods>
+            </class>
+            <class name ="HowWeWorkTests">
+                <methods>
+                    <include name = ".*TestCase12.*" />
+                    <include name = ".*TestCase13.*" />
+                    <include name = ".*TestCase14.*" />
+                </methods>
+            </class>
+            <class name ="MainTests">
+                <methods>
+                    <include name = ".*TestCase9.*" />
+                    <include name = ".*TestCase10.*" />
+                    <include name = ".*TestCase11.*" />
+                </methods>
+            </class>
+            <class name ="PhotosTests">
+                <methods>
+                    <include name = ".*TestCase7.*" />
+                    <include name = ".*TestCase8.*" />
+                </methods>
+            </class>
+            <class name ="RegistrationTests">
+            <methods>
+                <include name = ".*TestCase1.*" />
+            </methods>
+            </class>
+            <class name ="PrettyWomenTests">
+                <methods>
+                    <include name = ".*TestCase2.*" />
+                    <include name = ".*TestCase3.*" />
+                    <exclude name = ".*TestCase4.*" />
+                </methods>
+            </class>
+            <class name ="SignInTests">
+                <methods>
+                    <include name = ".*TestCase5.*" />
+                </methods>
+            </class>
+            <class name ="TourToUkraineTests">
+                <methods>
+                    <include name = ".*TestCase6.*" />
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+
+</suite>
+
+    <!--test name="FirefoxTestCases">
 
         <parameter name="browser" value="firefox"/>
 
@@ -11,18 +84,6 @@
 
         </classes>
 
-    </test>
+    </test!-->
 
-    <test name="ChromeTestCases">
 
-        <parameter name="browser" value="chrome"/>
-
-        <classes>
-
-            <class name ="RegistrationTests"/>
-
-        </classes>
-
-    </test>
-
-</suite>

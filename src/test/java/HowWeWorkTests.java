@@ -4,8 +4,11 @@ import org.testng.annotations.Test;
 
 public class HowWeWorkTests extends BaseUI {
     String currentUrlSearch;
+    public static final boolean testCase12 = true;
+    public static final boolean testCase13 = true;
+    public static final boolean testCase14 = true;
 
-    @Test
+    @Test(priority = 1, enabled = testCase12, groups = {"user", "admin"})
     public void testHowWeWork () {
 
         mainPage.clickHowWeWorkLink();
@@ -14,7 +17,7 @@ public class HowWeWorkTests extends BaseUI {
 
         Assert.assertEquals(Data.expectedHowWeWorksUrl,currentUrlSearch);
     }
-    @Test
+    @Test(priority = 1, enabled = testCase13, groups = {"user", "admin"})
     public void testMainTitle() {
         mainPage.clickHowWeWorkLink();
         wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.CURRENT_TITLE));
@@ -24,7 +27,7 @@ public class HowWeWorkTests extends BaseUI {
         }
 
     }
-    @Test
+    @Test(priority = 3, enabled = testCase14, groups = {"user", "admin"})
     public void testCountPagesContent() {
         mainPage.clickHowWeWorkLink();
         int count = 22;

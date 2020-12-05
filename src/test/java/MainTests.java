@@ -8,8 +8,11 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class MainTests extends BaseUI {
+    public static final boolean testCase9 = true;
+    public static final boolean testCase10 = true;
+    public static final boolean testCase11 = true;
 
-    @Test
+    @Test(priority = 1, enabled = testCase9, groups = {"user", "admin"})
     public void testYoutubePlayButton () {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         WebElement frameHomePageYoutube = driver.findElement(Locators.FRAME_HOME_PAGE_YOUTUBE);
@@ -18,7 +21,7 @@ public class MainTests extends BaseUI {
 
     }
     // List<int>
-    @Test
+    @Test(priority = 1, enabled = testCase10, groups = {"user", "admin"})
     public void checkCountTitles() {
         List<WebElement> links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
         System.out.println(links.size());
@@ -30,7 +33,7 @@ public class MainTests extends BaseUI {
         }
     }
     // List<String>
-    @Test
+    @Test(priority = 1, enabled = testCase11, groups = {"user", "admin"})
     public void checkTitles() {
         WebElement title = driver.findElement(Locators.TITLE_HOME_PAGE);
         wait.until(ExpectedConditions.visibilityOfAllElements(title));
@@ -43,8 +46,5 @@ public class MainTests extends BaseUI {
         } else {
             Assert.fail(Data.notMatched);
         }
-
     }
-
-
 }

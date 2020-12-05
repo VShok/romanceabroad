@@ -3,8 +3,10 @@ import org.testng.annotations.Test;
 
 public class RegistrationTests extends BaseUI {
 
-    @Test
-    public void testRegistration() {
+    public static final boolean testCase1 = true;
+
+    @Test(priority = 1, enabled = testCase1, groups = {"user", "admin"})
+    public void testRegistrationPageTestCase1() {
         mainPage.clickRegistrationButton();
         mainPage.fillInEmailAndPassword();
         mainPage.fillInFullInformation();

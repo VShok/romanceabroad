@@ -27,7 +27,7 @@ public class BaseUI {
     SoftAssert softAssert = new SoftAssert();
 
 
-    @BeforeMethod
+    @BeforeMethod(groups = {"user", "admin"}, alwaysRun = true)
 
     @Parameters("browser")
 

@@ -33,6 +33,7 @@ public class Locators {
     // Photo Page
 
     public static final By LINK_PHOTOS = By.xpath("//a[@href='https://romanceabroad.com/media/index']");
+    public static final By SELECT_PHOTOS = By.xpath("//span[@id='gallery_media_sorter']//select");
     public static final By BUTTON_PHOTO = By.xpath("//li[@data-param='photo']//a");
     public static final By BUTTON_VIDEO = By.xpath("//li[@data-param='video']//a");
     public static final By BUTTON_ALBUMS = By.xpath("//li[@data-param='albums']//a");
@@ -65,6 +66,7 @@ public class Locators {
     public static final By FILTER_MAX_AGE = By.xpath("//select[@id='age_max']");
     public static final By TEXT_FIELD_PRETTY_WOMEN_SEARCH = By.xpath("//input[@value='Search']");
     public static final By BUTTON_FIND_PEOPLE = By.xpath("//button[@type='submit'][@id='main_search_button_user_line']");
+    public static final By THIRD_PAGE_PRETTY_WOMEN = By.xpath("//div[@id='pages_block_2']//a[@data-page='3']");
 
     // Sigh In Form
 

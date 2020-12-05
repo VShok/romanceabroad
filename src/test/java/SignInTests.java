@@ -3,8 +3,8 @@ import org.testng.annotations.Test;
 
 public class SignInTests extends BaseUI {
 
-
-    @Test
+    public static final boolean testCase5 = true;
+    @Test(priority = 1, enabled = testCase5, groups = {"user", "admin"})
     public void testSignIn () {
 
         mainPage.clickSignInLink();
