@@ -17,7 +17,7 @@ public class HowWeWorkTests extends BaseUI {
 
         Assert.assertEquals(Data.expectedHowWeWorksUrl,currentUrlSearch);
     }
-    @Test(priority = 1, enabled = testCase13, groups = {"user", "admin"})
+    @Test(priority = 2, enabled = testCase13, groups = {"user", "admin"})
     public void testMainTitle() {
         mainPage.clickHowWeWorkLink();
         wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.CURRENT_TITLE));

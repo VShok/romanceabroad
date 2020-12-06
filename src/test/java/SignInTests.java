@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 public class SignInTests extends BaseUI {
 
     public static final boolean testCase5 = true;
-    @Test(priority = 1, enabled = testCase5, groups = {"user", "admin"})
+    @Test(enabled = testCase5, groups = {"user", "admin"})
     public void testSignInLink () {
 
         mainPage.clickSignInLink();
