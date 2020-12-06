@@ -22,7 +22,7 @@ public class MainTests extends BaseUI {
     }
     // List<int>
     @Test(priority = 2, enabled = testCase10, groups = {"user", "admin"})
-    public void checkCountTitles() {
+    public void testCheckCountTitles() {
         List<WebElement> links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
         System.out.println(links.size());
         List<Integer> count = new ArrayList<>(Arrays.asList(4,7,8,9,10));
@@ -34,7 +34,7 @@ public class MainTests extends BaseUI {
     }
     // List<String>
     @Test(priority = 3, enabled = testCase11, groups = {"user", "admin"})
-    public void checkTitles() {
+    public void testCheckMainTitles() {
         WebElement title = driver.findElement(Locators.TITLE_HOME_PAGE);
         wait.until(ExpectedConditions.visibilityOfAllElements(title));
         String mainTitles = mainPage.getCurrentTitleTextHomePage();

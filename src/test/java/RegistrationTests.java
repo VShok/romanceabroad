@@ -4,7 +4,6 @@ import org.testng.annotations.Test;
 public class RegistrationTests extends BaseUI {
 
     public static final boolean testCase1 = true;
-
     @Test(enabled = testCase1, groups = {"user", "admin"})
     public void testFillInformationRegistrationPage() {
         mainPage.clickRegistrationButton();

@@ -82,8 +82,8 @@ public class BaseUI {
         driver.get(mainUrl);
     }
 
-    @AfterMethod
+    @AfterMethod(groups = {"user", "admin"}, alwaysRun = true)
     public void afterActions() {
-     //   driver.quit();
+        driver.quit();
     }
 }

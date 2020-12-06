@@ -17,54 +17,54 @@
         <classes>
             <class name ="BlogTests">
                 <methods>
-                    <include name = ".*Link.*" />
+                    <include name = ".*Link" />
                 </methods>
             </class>
             <class name ="GiftsTests">
                 <methods>
-                    <include name = ".*Link.*" />
+                    <include name = ".*Link" />
                 </methods>
             </class>
             <class name ="HowWeWorkTests">
                 <methods>
-                    <include name = ".*Link.*" />
-                    <include name = ".*Main.*" />
-                    <include name = ".*Content.*" />
+                    <include name = ".*Link" />
+                    <include name = ".*Title" />
+                    <include name = ".*Content" />
                 </methods>
             </class>
             <class name ="MainTests">
                 <methods>
                     <include name = ".*Play.*" />
                     <include name = ".*Count.*" />
-                    <include name = ".*Name.*" />
+                    <include name = ".*Main.*" />
                 </methods>
             </class>
             <class name ="PhotosTests">
                 <methods>
-                    <include name = ".*Link.*" />
+                    <include name = ".*Link" />
                     <include name = ".*Add.*" />
                 </methods>
             </class>
-            <class name ="RegistrationTests">
-            <methods>
-                <include name = ".*Fill.*" />
-            </methods>
-            </class>
             <class name ="PrettyWomenTests">
                 <methods>
-                    <include name = ".*Link.*" />
+                    <include name = ".*Link" />
                     <include name = ".*Search.*" />
                     <exclude name = ".*Third.*" />
                 </methods>
             </class>
             <class name ="SignInTests">
                 <methods>
-                    <include name = ".*Link.*" />
+                    <include name = ".*Link" />
                 </methods>
             </class>
             <class name ="TourToUkraineTests">
                 <methods>
-                    <include name = ".*Link.*" />
+                    <include name = ".*Link" />
+                </methods>
+            </class>
+            <class name ="RegistrationTests">
+                <methods>
+                    <include name = ".*FillIn.*" />
                 </methods>
             </class>
         </classes>

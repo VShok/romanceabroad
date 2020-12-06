@@ -20,7 +20,7 @@ public class PhotosTests extends BaseUI {
     }
 
     @Test(priority = 2, enabled = testCase8, groups = {"user", "admin"})
-    public void clickAddPhoto() {
+    public void testClickAddPhoto() {
         mainPage.clickPhotosLink();
         wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.BUTTON_ADD_PHOTOS));
         int count = mainPage.getSizeDropDownList(Locators.SELECT_PHOTOS);
