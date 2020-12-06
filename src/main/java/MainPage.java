@@ -4,7 +4,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.concurrent.TimeUnit;
 
-public class MainPage extends com.romanceabroad.ui.BaseActions {
+public class MainPage extends BaseActions {
 
     public MainPage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);

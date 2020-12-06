@@ -7,8 +7,8 @@ public class GiftsTests extends BaseUI {
     public static final boolean testCase15 = true;
 
 
-    @Test(priority = 1, enabled = testCase15, groups = {"user", "admin"})
-    public void testGifts () {
+    @Test(enabled = testCase15, groups = {"user", "admin"})
+    public void testGiftsLink () {
 
         mainPage.clickGiftsLink();
         currentUrlSearch = driver.getCurrentUrl();

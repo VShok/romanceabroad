@@ -9,7 +9,7 @@ public class HowWeWorkTests extends BaseUI {
     public static final boolean testCase14 = true;
 
     @Test(priority = 1, enabled = testCase12, groups = {"user", "admin"})
-    public void testHowWeWork () {
+    public void testHowWeWorkLink () {
 
         mainPage.clickHowWeWorkLink();
         currentUrlSearch = driver.getCurrentUrl();

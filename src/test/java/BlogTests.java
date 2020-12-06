@@ -8,8 +8,8 @@ public class BlogTests extends BaseUI {
     String currentUrlSearch;
     public static final boolean testCase16 = true;
 
-    @Test(priority = 3, enabled = testCase16, groups = {"user", "admin"})
-    public void testBlog () {
+    @Test(enabled = testCase16, groups = {"user", "admin"})
+    public void testBlogLink () {
         mainPage.clickBlogLink();
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy((Locators.BLOGS_BLOG_PAGE)));
         List <WebElement> blogs = driver.findElements(Locators.BLOGS_BLOG_PAGE);

@@ -9,7 +9,6 @@
 
         <groups>
             <run>
-                <exclude name = "firefox"  />
                 <include name = "user"    />
                 <include name = "admin"    />
             </run>
@@ -18,59 +17,61 @@
         <classes>
             <class name ="BlogTests">
                 <methods>
-                    <include name = ".*TestCase16.*" />
+                    <include name = ".*Link.*" />
                 </methods>
             </class>
             <class name ="GiftsTests">
                 <methods>
-                    <include name = ".*TestCase15.*" />
+                    <include name = ".*Link.*" />
                 </methods>
             </class>
             <class name ="HowWeWorkTests">
                 <methods>
-                    <include name = ".*TestCase12.*" />
-                    <include name = ".*TestCase13.*" />
-                    <include name = ".*TestCase14.*" />
+                    <include name = ".*Link.*" />
+                    <include name = ".*Main.*" />
+                    <include name = ".*Content.*" />
                 </methods>
             </class>
             <class name ="MainTests">
                 <methods>
-                    <include name = ".*TestCase9.*" />
-                    <include name = ".*TestCase10.*" />
-                    <include name = ".*TestCase11.*" />
+                    <include name = ".*Play.*" />
+                    <include name = ".*Count.*" />
+                    <include name = ".*Name.*" />
                 </methods>
             </class>
             <class name ="PhotosTests">
                 <methods>
-                    <include name = ".*TestCase7.*" />
-                    <include name = ".*TestCase8.*" />
+                    <include name = ".*Link.*" />
+                    <include name = ".*Add.*" />
                 </methods>
             </class>
             <class name ="RegistrationTests">
             <methods>
-                <include name = ".*TestCase1.*" />
+                <include name = ".*Fill.*" />
             </methods>
             </class>
             <class name ="PrettyWomenTests">
                 <methods>
-                    <include name = ".*TestCase2.*" />
-                    <include name = ".*TestCase3.*" />
-                    <exclude name = ".*TestCase4.*" />
+                    <include name = ".*Link.*" />
+                    <include name = ".*Search.*" />
+                    <exclude name = ".*Third.*" />
                 </methods>
             </class>
             <class name ="SignInTests">
                 <methods>
-                    <include name = ".*TestCase5.*" />
+                    <include name = ".*Link.*" />
                 </methods>
             </class>
             <class name ="TourToUkraineTests">
                 <methods>
-                    <include name = ".*TestCase6.*" />
+                    <include name = ".*Link.*" />
                 </methods>
             </class>
         </classes>
 
     </test>
+
+    
 
 </suite>
 

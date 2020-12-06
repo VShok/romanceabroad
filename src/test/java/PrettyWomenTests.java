@@ -11,7 +11,7 @@ public class PrettyWomenTests extends BaseUI {
 
 
     @Test(priority = 1, enabled = testCase2, groups = {"user", "admin"})
-    public void testPrettyWoman() {
+    public void testPrettyWomenLink() {
 
         mainPage.clickPrettyWomenLink();
 

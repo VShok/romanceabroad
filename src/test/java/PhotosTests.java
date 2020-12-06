@@ -8,7 +8,7 @@ public class PhotosTests extends BaseUI {
     String currentUrlSearch;
 
     @Test(priority = 1, enabled = testCase7, groups = {"user", "admin"})
-    public void testPhotos () {
+    public void testPhotosLink () {
 
         mainPage.clickPhotosLink();
 
