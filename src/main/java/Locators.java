@@ -51,13 +51,15 @@ public class Locators {
     public static final By BUTTON_NEXT = By.xpath("//button[@data-action='next-page'][text()='Next']");
     public static final By TEXT_FIELD_USERNAME = By.cssSelector("#nickname");
     public static final By BUTTON_DAY_SELECT = By.cssSelector("div#daySelect");
-    public static final By SIXTH_DAY_SELECT = By.xpath("//li[@data-handler='selectDay']//a[@data-value='6']");
+    public static final By LIST_VALUE_DAY = By.xpath("//li[@data-handler='selectDay']");
     public static final By BUTTON_MONTH_SELECT = By.cssSelector("div#monthSelect");
-    public static final By JUNE_MONTH_SELECT = By.xpath("//li[@data-handler='selectMonth']//a[@data-value='5']");
+    public static final By LIST_VALUE_MONTH = By.xpath("//li[@data-handler='selectMonth']");
     public static final By BUTTON_YEAR_SELECT = By.cssSelector("div#yearSelect");
-    public static final By NINETEEN_EIGHTY_NINE_YEAR_SELECT = By.xpath("//li[@data-handler='selectYear']//a[@data-value='1989']");
+    public static final By LIST_VALUE_YEAR = By.xpath("//li[@data-handler='selectYear']");
     public static final By TEXT_FIELD_PHONE = By.cssSelector("input[name='data[phone]']");
-    public static final By BUTTON_CONFIRMATION = By.cssSelector("input#confirmation");
+    public static final By CHECKBOX_CONFIRMATION = By.cssSelector("input#confirmation");
+    public static final By LIST_VALUE_LOCATION = By.xpath("//div[@class='dropdown dropdown_location']//ul/li");
+    public static final By AUTO_FILLING_FORM_LOCATION = By.xpath("//input[@name='region_name']");
 
     // Pretty Women Page
 
@@ -79,6 +81,15 @@ public class Locators {
 
     public static final By LINK_BLOG = By.xpath("//a[@href='https://romanceabroad.com/content/view/blog']");
     public static final By BLOGS_BLOG_PAGE = By.xpath("//div[@class='info-content-block wysiwyg']//ul//li/a");
+
+    // Contact Us
+
+    public static final By LINK_CONTACT_US_PAGE = By.xpath("//li/a[@id='footer_footer-menu-help-item_footer-menu-tickets-item']/div");
+    public static final By SELECT_REASON = By.xpath("//select[@name='id_reason']");
+    public static final By TEXT_FIELD_USER_NAME = By.xpath("//input[@name='user_name']");
+    public static final By TEXT_FIELD_USER_EMAIL = By.xpath("//input[@name='user_email']");
+    public static final By TEXT_FIELD_USER_SUBJECT = By.xpath("//input[@name='subject']");
+    public static final By TEXT_FIELD_USER_MESSAGE = By.xpath("//textarea[@name='message']");
 
     // Titles
     public static final By CURRENT_TITLE = By.xpath("//h1");

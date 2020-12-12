@@ -11,7 +11,7 @@ public class PhotosTests extends BaseUI {
     public void testPhotosLink () {
 
         mainPage.clickPhotosLink();
-
+        mainPage.javaWait(1500);
         currentUrlSearch = driver.getCurrentUrl();
         System.out.println(currentUrlSearch);
 
@@ -20,7 +20,8 @@ public class PhotosTests extends BaseUI {
     }
 
     @Test(priority = 2, enabled = testCase8, groups = {"user", "admin"})
-    public void testClickAddPhoto() {
+    public void testClickButtonAddPhoto() {
+
         mainPage.clickPhotosLink();
         wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.BUTTON_ADD_PHOTOS));
         int count = mainPage.getSizeDropDownList(Locators.SELECT_PHOTOS);

@@ -23,6 +23,7 @@ public class BaseUI {
     TourToUkrainePage tourToUkrainePage;
     BlogPage blogPage;
     SignInPage signInPage;
+    ContactUsPage contactUsPage;
     String mainUrl = "https://romanceabroad.com/";
     SoftAssert softAssert = new SoftAssert();
 
@@ -79,11 +80,12 @@ public class BaseUI {
         tourToUkrainePage = new TourToUkrainePage(driver, wait);
         blogPage = new BlogPage(driver, wait);
         signInPage = new SignInPage(driver, wait);
+        contactUsPage = new ContactUsPage(driver, wait);
         driver.get(mainUrl);
     }
 
     @AfterMethod(groups = {"user", "admin"}, alwaysRun = true)
     public void afterActions() {
-        driver.quit();
+        //driver.quit();
     }
 }

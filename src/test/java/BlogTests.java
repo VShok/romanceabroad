@@ -6,7 +6,7 @@ import java.util.List;
 
 public class BlogTests extends BaseUI {
     String currentUrlSearch;
-    public static final boolean testCase16 = true;
+    public static final boolean testCase16 = false;
 
     @Test(enabled = testCase16, groups = {"user", "admin"})
     public void testBlogLink () {

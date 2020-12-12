@@ -23,7 +23,7 @@ public class PrettyWomenTests extends BaseUI {
         prettyWomenPage.getDropDownListByIndex(Locators.FILTER_MAX_AGE,8);
     }
     @Test(priority = 2, enabled = testCase3, groups = {"user", "admin"})
-    public  void testSearchButton() {
+    public  void testSearchButtonTestCase3() {
         mainPage.clickPrettyWomenLink();
         if(driver.findElement(Locators.TEXT_FIELD_PRETTY_WOMEN_SEARCH).isDisplayed()) {
             System.out.println(Data.clicable);
@@ -33,10 +33,10 @@ public class PrettyWomenTests extends BaseUI {
     }
 
     @Test(priority = 3, enabled = testCase4, groups = {"user", "admin"})
-    public void testThirdPage() {
+    public void testThirdPageTestCase4() {
         mainPage.clickPrettyWomenLink();
         mainPage.scrollToBottomOfPage();
         mainPage.javaWait(2500);
-        mainPage.perfomClick(driver.findElement(Locators.THIRD_PAGE_PRETTY_WOMEN));
+        mainPage.performClickWebElement(driver.findElement(Locators.THIRD_PAGE_PRETTY_WOMEN));
     }
 }

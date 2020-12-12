@@ -28,6 +28,7 @@ public class BaseActions {
         this.wait = wait;
     }
 
+
     public static String generateNewNumber(String name, int length) {
         return name + RandomStringUtils.random(length, "123");
     }
@@ -73,14 +74,8 @@ public class BaseActions {
 
     }
 
-    public void perfomClick(By locator, int index) {
-        WebElement element = driver.findElements(locator).get(index);
-        Actions actions = new Actions(driver);
-        actions.moveToElement(element).perform();
-        actions.click().build().perform();
-    }
 
-    public void perfomClick(WebElement element) {
+    public void performClickWebElement(WebElement element) {
         Actions actions = new Actions(driver);
         actions.moveToElement(element).perform();
         actions.click().build().perform();

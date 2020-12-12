@@ -18,7 +18,7 @@ public class HowWeWorkTests extends BaseUI {
         Assert.assertEquals(Data.expectedHowWeWorksUrl,currentUrlSearch);
     }
     @Test(priority = 2, enabled = testCase13, groups = {"user", "admin"})
-    public void testMainTitle() {
+    public void testMainTitleTestCase13() {
         mainPage.clickHowWeWorkLink();
         wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.CURRENT_TITLE));
         String titleHowItWorksPage = driver.findElement(Locators.CURRENT_TITLE).getText();
@@ -28,7 +28,7 @@ public class HowWeWorkTests extends BaseUI {
 
     }
     @Test(priority = 3, enabled = testCase14, groups = {"user", "admin"})
-    public void testCountPagesContent() {
+    public void testCountPagesContentTestCase14() {
         mainPage.clickHowWeWorkLink();
         int count = 22;
         wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.CURRENT_TITLE));

@@ -46,8 +46,8 @@ public class Conditions extends BaseUI {
     @Test
     public void test4() {
         mainPage.clickRegistrationButton();
-        mainPage.fillInEmailAndPassword();
-        WebElement checkbox = driver.findElement(Locators.BUTTON_CONFIRMATION);
+        mainPage.fillInEmailAndPassword(Data.email, Data.password);
+        WebElement checkbox = driver.findElement(Locators.CHECKBOX_CONFIRMATION);
         if (!checkbox.isSelected()) {
             checkbox.click();
             System.out.println(Data.checkbox);

@@ -11,9 +11,16 @@ public class Data {
     public static final String password = "Crazyeagle45!";
     public static final String username = "spookyghost";
     public static final String phoneNumber = "7098679005";
-    public static final int day = 11;
-    public static final int month = 4;
-    public static final int year = 1990;
+    public static final String day = "11";
+    public static final String month = "April";
+    public static final String city = "Chicago";
+    public static final String year = "1991";
+    public static final String location = "Chicago, Illinois, United States";
+
+    // Contact US
+    public static final String name = "Daniel";
+    public static final String subject = "updates";
+    public static final String message = "When will you update the list of women";
 
     // Expected URL
     public static final String expectedBlogUrl = "https://romanceabroad.com/content/view/blog";
@@ -22,6 +29,7 @@ public class Data {
     public static final String expectedPhotosUrl = "https://romanceabroad.com/media/index";
     public static final String expectedPrettyWomenUrl = "https://romanceabroad.com/users/search";
     public static final String expectedTourUkraineUrl = "https://romanceabroad.com/store/sweets/20-tour_to_ukraine";
+    public static final String expectedContactUsUrl = "https://romanceabroad.com/tickets/";
 
     // Login Data
     public static final String expectedLogInTitle = "Login";

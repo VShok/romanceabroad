@@ -62,22 +62,38 @@ public class MainPage extends BaseActions {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
+    public void clickContactUsPage() {
+        wait.until(ExpectedConditions.elementToBeClickable(Locators.LINK_CONTACT_US_PAGE));
+        WebElement link_Contact_Us = driver.findElement(Locators.LINK_CONTACT_US_PAGE);
+        ajaxClick(link_Contact_Us);
+    }
+
     public void clickRegistrationButton() {
         driver.findElement(Locators.BUTTON_REGISTRATION).click();
     }
-    public void fillInEmailAndPassword() {
-        driver.findElement(Locators.TEXT_FIELD_EMAIL).sendKeys(Data.email);
-        driver.findElement(Locators.TEXT_FIELD_PASSWORD).sendKeys(Data.password);
+    public void fillInEmailAndPassword(String email, String password) {
+        driver.findElement(Locators.TEXT_FIELD_EMAIL).sendKeys(email);
+        driver.findElement(Locators.TEXT_FIELD_PASSWORD).sendKeys(password);
         driver.findElement(Locators.BUTTON_NEXT).click();
     }
-    public void fillInFullInformation() {
-        driver.findElement(Locators.TEXT_FIELD_USERNAME).sendKeys(generateNewNumber(Data.username, 5));
+    public void fillInFullInformation(String username, String phone, String day, String month, String year, String location, String city) {
+        driver.findElement(Locators.TEXT_FIELD_USERNAME).sendKeys(username);
+
         driver.findElement(Locators.BUTTON_DAY_SELECT).click();
-        driver.findElement(Locators.SIXTH_DAY_SELECT).click();
+        clickValueOfList(Locators.LIST_VALUE_DAY, day);
+
         driver.findElement(Locators.BUTTON_MONTH_SELECT).click();
-        driver.findElement(Locators.JUNE_MONTH_SELECT).click();
+        clickValueOfList(Locators.LIST_VALUE_MONTH, month);
+
         driver.findElement(Locators.BUTTON_YEAR_SELECT).click();
-        driver.findElement(Locators.NINETEEN_EIGHTY_NINE_YEAR_SELECT).click();
-        driver.findElement(Locators.TEXT_FIELD_PHONE).sendKeys(Data.phoneNumber);
+        clickValueOfList(Locators.LIST_VALUE_YEAR, year);
+
+        driver.findElement(Locators.TEXT_FIELD_PHONE).sendKeys(phone);
+        driver.findElement(Locators.CHECKBOX_CONFIRMATION).click();
+        driver.findElement(Locators.AUTO_FILLING_FORM_LOCATION).clear();
+        driver.findElement(Locators.AUTO_FILLING_FORM_LOCATION).sendKeys(city);
+        clickValueOfList(Locators.LIST_VALUE_LOCATION, location);
     }
+
+
 }

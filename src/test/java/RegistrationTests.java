@@ -7,9 +7,10 @@ public class RegistrationTests extends BaseUI {
     @Test(enabled = testCase1, groups = {"user", "admin"})
     public void testFillInformationRegistrationPage() {
         mainPage.clickRegistrationButton();
-        mainPage.fillInEmailAndPassword();
-        mainPage.fillInFullInformation();
-        WebElement checkbox = driver.findElement(Locators.BUTTON_CONFIRMATION);
+        mainPage.fillInEmailAndPassword(Data.email, Data.password);
+        mainPage.fillInFullInformation(mainPage.generateNewNumber(Data.username, 5),
+                Data.phoneNumber, Data.month, Data.day, Data.year, Data.location, Data.city);
+        WebElement checkbox = driver.findElement(Locators.CHECKBOX_CONFIRMATION);
         if (!checkbox.isSelected()) {
             checkbox.click();
             System.out.println(Data.checkbox);

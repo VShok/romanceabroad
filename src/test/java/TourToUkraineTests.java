@@ -8,7 +8,7 @@ public class TourToUkraineTests extends BaseUI {
     public void testTourToUkraineLink() {
 
         mainPage.clickTourToUkraineLink();
-
+        mainPage.javaWait(1500);
         currentUrlSearch = driver.getCurrentUrl();
         System.out.println(currentUrlSearch);
 

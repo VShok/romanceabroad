@@ -15,63 +15,19 @@
         </groups>
 
         <classes>
-            <class name ="BlogTests">
-                <methods>
-                    <include name = ".*Link" />
-                </methods>
-            </class>
             <class name ="GiftsTests">
-                <methods>
-                    <include name = ".*Link" />
-                </methods>
-            </class>
-            <class name ="HowWeWorkTests">
-                <methods>
-                    <include name = ".*Link" />
-                    <include name = ".*Title" />
-                    <include name = ".*Content" />
-                </methods>
-            </class>
-            <class name ="MainTests">
-                <methods>
-                    <include name = ".*Play.*" />
-                    <include name = ".*Count.*" />
-                    <include name = ".*Main.*" />
-                </methods>
-            </class>
-            <class name ="PhotosTests">
-                <methods>
-                    <include name = ".*Link" />
-                    <include name = ".*Add.*" />
-                </methods>
-            </class>
-            <class name ="PrettyWomenTests">
-                <methods>
-                    <include name = ".*Link" />
-                    <include name = ".*Search.*" />
-                    <exclude name = ".*Third.*" />
-                </methods>
-            </class>
-            <class name ="SignInTests">
-                <methods>
-                    <include name = ".*Link" />
-                </methods>
-            </class>
-            <class name ="TourToUkraineTests">
-                <methods>
-                    <include name = ".*Link" />
-                </methods>
-            </class>
-            <class name ="RegistrationTests">
-                <methods>
-                    <include name = ".*FillIn.*" />
-                </methods>
-            </class>
+                </class>
+            <class name ="HowWeWorkTests"/>
+            <class name ="MainTests"/>
+            <class name ="PhotosTests"/>
+            <class name ="PrettyWomenTests"/>
+            <class name ="SignInTests"/>
+            <class name ="TourToUkraineTests"/>
+            <class name ="RegistrationTests"/>
+            <class name ="BlogTests"/>
         </classes>
 
     </test>
-
-    
 
 </suite>
 
@@ -83,7 +39,25 @@
 
             <class name ="RegistrationTests"/>
 
-        </classes>
+
+            <methods>
+            <include name = "testGiftsLink" />
+            <include name = "testHowWeWorkLink" />
+            <include name = "testMainTitleTestCase13" />
+            <include name = "testCountPagesContentTestCase14" />
+            <include name = "testYoutubePlayButtonTestCase9" />
+            <include name = "testCheckCountTitlesTestCase10" />
+            <include name = "testCheckMainTitlesTestCase11" />
+            <include name = "testClickButtonAddPhototestClickButtonAddPhoto" />
+            <include name = "testPhotosLink" />
+            <include name = "testPrettyWomenLink" />
+            <include name = "testSearchButtonTestCase3" />
+            <include name = "testThirdPageTestCase4" />
+            <include name = "testSignInFillInLoginPassword" />
+            <include name = "testTourToUkraineLink" />
+            <include name = "testFillInformationRegistrationPage" />
+            <exclude name = "testBlogLink" />
+            </methods>
 
     </test!-->
 

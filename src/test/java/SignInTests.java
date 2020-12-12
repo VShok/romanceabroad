@@ -5,7 +5,7 @@ public class SignInTests extends BaseUI {
 
     public static final boolean testCase5 = true;
     @Test(enabled = testCase5, groups = {"user", "admin"})
-    public void testSignInLink () {
+    public void testSignInFillInLoginPassword () {
 
         mainPage.clickSignInLink();
 

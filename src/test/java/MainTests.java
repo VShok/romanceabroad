@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class MainTests extends BaseUI {
     public static final boolean testCase9 = true;
@@ -13,8 +12,8 @@ public class MainTests extends BaseUI {
     public static final boolean testCase11 = true;
 
     @Test(priority = 1, enabled = testCase9, groups = {"user", "admin"})
-    public void testYoutubePlayButton () {
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+    public void testYoutubePlayButtonTestCase9() {
+        mainPage.javaWaitSec(3);
         WebElement frameHomePageYoutube = driver.findElement(Locators.FRAME_HOME_PAGE_YOUTUBE);
         driver.switchTo().frame(frameHomePageYoutube);
         driver.findElement(Locators.BUTTON_HOME_PAGE_YOUTUBE).click();
@@ -22,7 +21,7 @@ public class MainTests extends BaseUI {
     }
     // List<int>
     @Test(priority = 2, enabled = testCase10, groups = {"user", "admin"})
-    public void testCheckCountTitles() {
+    public void testCheckCountTitlesTestCase10() {
         List<WebElement> links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
         System.out.println(links.size());
         List<Integer> count = new ArrayList<>(Arrays.asList(4,7,8,9,10));
@@ -34,7 +33,7 @@ public class MainTests extends BaseUI {
     }
     // List<String>
     @Test(priority = 3, enabled = testCase11, groups = {"user", "admin"})
-    public void testCheckMainTitles() {
+    public void testCheckMainTitlesTestCase11() {
         WebElement title = driver.findElement(Locators.TITLE_HOME_PAGE);
         wait.until(ExpectedConditions.visibilityOfAllElements(title));
         String mainTitles = mainPage.getCurrentTitleTextHomePage();
