@@ -19,6 +19,7 @@ public class BlogTests extends BaseUI {
             nameOfArticle = link.getText();
             link.click();
             titleOfArticle = blogPage.getAnyTitle();
+            driver.navigate().back();
             //Assert.assertEquals(nameOfArticle, titleOfArticle);
             blogs = blogPage.collectAllLinksOfArticles();
             softAssert.assertEquals(nameOfArticle, titleOfArticle, Data.notMatched);
