@@ -6,12 +6,12 @@ public class SignInPage extends BaseActions {
     public SignInPage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
     }
-    public void fillInEmailAndPassword() {
+    public void fillInEmailAndPassword(String email, String password) {
         WebElement linkLoginEmail = driver.findElement(Locators.LINK_LOGIN_EMAIL);
-        linkLoginEmail.sendKeys(Data.email);
+        linkLoginEmail.sendKeys(email);
 
         WebElement linkLoginPassword = driver.findElement(Locators.LINK_LOGIN_PASSWORD);
-        linkLoginPassword.sendKeys(Data.password);
+        linkLoginPassword.sendKeys(password);
     }
 
     public String getCurrentTitle () {

@@ -76,7 +76,7 @@ public class MainPage extends BaseActions {
         driver.findElement(Locators.TEXT_FIELD_PASSWORD).sendKeys(password);
         driver.findElement(Locators.BUTTON_NEXT).click();
     }
-    public void fillInFullInformation(String username, String phone, String day, String month, String year, String location, String city) {
+    public void fillInFullInformation(String username, String day, String month, String year, String phone, String city, String location) {
         driver.findElement(Locators.TEXT_FIELD_USERNAME).sendKeys(username);
 
         driver.findElement(Locators.BUTTON_DAY_SELECT).click();
