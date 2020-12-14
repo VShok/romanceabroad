@@ -193,10 +193,11 @@ public class BaseActions {
         }
     }
 
-    /*public String getAnyTitle() {
-        String title = driver.findElement(Locators.CURRENT_TITLE).getText();
+    public String getAnyTitle() {
+        javaWaitSec(1);
+        String title = driver.findElement(Locators.H1_TITLE).getText();
         return title;
-    }*/
+    }
 
 }
 

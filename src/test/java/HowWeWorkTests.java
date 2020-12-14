@@ -20,8 +20,8 @@ public class HowWeWorkTests extends BaseUI {
     @Test(priority = 2, enabled = testCase13, groups = {"user", "admin"})
     public void testMainTitleTestCase13() {
         mainPage.clickHowWeWorkLink();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.CURRENT_TITLE));
-        String titleHowItWorksPage = driver.findElement(Locators.CURRENT_TITLE).getText();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.H1_TITLE));
+        String titleHowItWorksPage = driver.findElement(Locators.H1_TITLE).getText();
         if (titleHowItWorksPage != Data.expectedTitleHowItWorksPage) {
             System.out.println("Wrong title in How it works page");
         }
@@ -31,7 +31,7 @@ public class HowWeWorkTests extends BaseUI {
     public void testCountPagesContentTestCase14() {
         mainPage.clickHowWeWorkLink();
         int count = 22;
-        wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.CURRENT_TITLE));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.H1_TITLE));
         int countPagesContent = driver.findElements(Locators.BLOGS_PAGES).size();
         System.out.println(countPagesContent);
         if (countPagesContent != count) {

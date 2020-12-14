@@ -92,7 +92,7 @@ public class Locators {
     public static final By TEXT_FIELD_USER_MESSAGE = By.xpath("//textarea[@name='message']");
 
     // Titles
-    public static final By CURRENT_TITLE = By.xpath("//h1");
+    public static final By H1_TITLE = By.xpath("//h1");
     public static final By TAB_OF_MAIN_PAGE = By.xpath("//ul[@class='navbar-nav']//li");
     public static final By IMAGES = By.xpath("//a[@class='g-pic-border g-rounded']");
 }

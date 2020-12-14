@@ -21,7 +21,7 @@ public class MainPage extends BaseActions {
         return info;
     }
     public String getTitle() {
-        String actualTitle = driver.findElement(Locators.CURRENT_TITLE).getText();
+        String actualTitle = driver.findElement(Locators.H1_TITLE).getText();
         return actualTitle;
     }
 
