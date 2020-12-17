@@ -15,6 +15,11 @@ public class MainPage extends BaseActions {
         return text;
     }
 
+    public void clickNextButton() {
+        driver.findElement(Locators.BUTTON_NEXT);
+    }
+
+
     public String getCurrentTitleHomePages(int index) {
         String info = driver.findElements(Locators.TAB_OF_MAIN_PAGE).get(index).getText();
         System.out.println(info);

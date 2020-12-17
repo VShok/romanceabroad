@@ -7,12 +7,16 @@ public class Data {
     public static final String MAIN_URL = "https://romanceabroad.com/";
 
     // Registration Data
-    public static final String email = "grounded@gmail.com";
+    public static final String email1 = "1grounded@gmail.com";
+    public static final String email2 = "2groundedmail.ru";
+    public static final String email3 = "3grounded@yahoo.com";
     public static final String password = "Crazyeagle45!";
-    public static final String username = "spookyghost";
-    public static final String phoneNumber = "7098679005";
+    public static final int lengthSecondPartOfUsername = 5;
+    public static final String usernamePart = "Crzbound";
+    public static final String username = MainPage.generateNewNumber(usernamePart, Data.lengthSecondPartOfUsername);
+    public static final String phone = "7098679005";
     public static final String day = "11";
-    public static final String month = "April";
+    public static final String month = "May";
     public static final String city = "Chicago";
     public static final String year = "1991";
     public static final String location = "Chicago, Illinois, United States";

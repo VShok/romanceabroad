@@ -49,6 +49,7 @@ public class Locators {
     public static final By TEXT_FIELD_EMAIL = By.cssSelector("input#email");
     public static final By TEXT_FIELD_PASSWORD = By.cssSelector("input#password");
     public static final By BUTTON_NEXT = By.xpath("//button[@data-action='next-page'][text()='Next']");
+    public static final By TOOLTIP_ERROR=  By.xpath("//div[@class='tooltip']");
     public static final By TEXT_FIELD_USERNAME = By.cssSelector("#nickname");
     public static final By BUTTON_DAY_SELECT = By.cssSelector("div#daySelect");
     public static final By LIST_VALUE_DAY = By.xpath("//li[@data-handler='selectDay']");

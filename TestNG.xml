@@ -15,19 +15,67 @@
         </groups>
 
         <classes>
+            <class name ="BlogTests">
+                <methods>
+                    <include name = ".*Link" />
+                </methods>
+            </class>
             <class name ="GiftsTests">
-                </class>
-            <class name ="HowWeWorkTests"/>
-            <class name ="MainTests"/>
-            <class name ="PhotosTests"/>
-            <class name ="PrettyWomenTests"/>
-            <class name ="SignInTests"/>
-            <class name ="TourToUkraineTests"/>
-            <class name ="RegistrationTests"/>
-            <class name ="BlogTests"/>
-        </classes>
+                <methods>
+                    <include name = ".*Link" />
+                </methods>
+            </class>
+            <class name ="HowWeWorkTests">
+                <methods>
+                    <include name = ".*Link" />
+                    <include name = ".*Title.*" />
+                    <include name = ".*Content.*" />
+                </methods>
+            </class>
+            <class name ="MainTests">
+                <methods>
+                    <include name = ".*Play.*" />
+                    <include name = ".*Count.*" />
+                    <include name = ".*Main.*" />
+                </methods>
+            </class>
+            <class name ="PhotosTests">
+                <methods>
+                    <include name = ".*Link" />
+                    <include name = ".*Add.*" />
+                </methods>
+            </class>
+            <class name ="PrettyWomenTests">
+                <methods>
+                    <include name = ".*Link" />
+                    <include name = ".*Search.*" />
+                    <include name = ".*Third.*" />
+                </methods>
+            </class>
+            <class name ="SignInTests">
+                <methods>
+                    <include name = ".*Link" />
+                </methods>
+            </class>
+            <class name ="ContactUsTests">
+                <methods>
+                    <include name = ".*ContactUs.*" />
+                </methods>
+            </class>
+            <class name ="TourToUkraineTests">
+                <methods>
+                    <include name = ".*Link" />
+                </methods>
+            </class>
+            <class name ="RegistrationTests">
+                <methods>
+                    <include name = ".*FillIn.*" />
+                </methods>
+            </class>
+    </classes>
 
-    </test>
+
+</test>
 
 </suite>
 

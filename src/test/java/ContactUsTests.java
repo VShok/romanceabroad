@@ -15,7 +15,7 @@ public class ContactUsTests extends BaseUI {
 
         Assert.assertEquals(Data.expectedContactUsUrl,currentUrlSearch);
         mainPage.selectItemDropDownRandomOption(Locators.SELECT_REASON, "Reason");
-        contactUsPage.fillInContactUsInformation(Data.name, Data.email, Data.subject, Data.message);
+        contactUsPage.fillInContactUsInformation(Data.name, Data.email1, Data.subject, Data.message);
 
     }
 

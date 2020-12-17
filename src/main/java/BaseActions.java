@@ -1,4 +1,4 @@
-import org.apache.commons.lang3.RandomStringUtils;
+import net.bytebuddy.utility.RandomString;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -30,7 +30,7 @@ public class BaseActions {
 
 
     public static String generateNewNumber(String name, int length) {
-        return name + RandomStringUtils.random(length, "123");
+        return name + RandomString.make(123);
     }
 
     public void getDropDownListByIndex(By locator, int index) {
