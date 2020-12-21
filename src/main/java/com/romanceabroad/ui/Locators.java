@@ -1,3 +1,5 @@
+package com.romanceabroad.ui;
+
 import org.openqa.selenium.By;
 
 public class Locators {
@@ -66,9 +68,11 @@ public class Locators {
 
     public static final By LINK_PRETTY_WOMAN = By.xpath("//a[@href='https://romanceabroad.com/users/search']");
     public static final By TABLE_AGE_MIN_MAX = By.xpath("//div[@class='search-box advanced']");
-    public static final By FILTER_MAX_AGE = By.xpath("//select[@id='age_max']");
+    public static final By FILTER_MAX_AGE = By.cssSelector("select#age_max");
+    public static final By FILTER_MIN_AGE = By.cssSelector("select#age_min");
+    public static final By FILTER_SORT_BY = By.xpath("//div[@class='form-inline']//select");
     public static final By TEXT_FIELD_PRETTY_WOMEN_SEARCH = By.xpath("//input[@value='Search']");
-    public static final By BUTTON_FIND_PEOPLE = By.xpath("//button[@type='submit'][@id='main_search_button_user_line']");
+    public static final By BUTTON_SEARCH = By.cssSelector("#main_search_button_user_advanced");
     public static final By THIRD_PAGE_PRETTY_WOMEN = By.xpath("//div[@id='pages_block_2']//a[@data-page='3']");
 
     // Sigh In Form

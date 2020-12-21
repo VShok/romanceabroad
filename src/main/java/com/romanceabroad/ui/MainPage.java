@@ -1,3 +1,5 @@
+package com.romanceabroad.ui;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -98,6 +100,15 @@ public class MainPage extends BaseActions {
         driver.findElement(Locators.AUTO_FILLING_FORM_LOCATION).clear();
         driver.findElement(Locators.AUTO_FILLING_FORM_LOCATION).sendKeys(city);
         clickValueOfList(Locators.LIST_VALUE_LOCATION, location);
+    }
+
+    public void javaWait(int ms) {
+        System.out.println("Child!!!");
+        try {
+            Thread.sleep(ms);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 

@@ -15,59 +15,59 @@
         </groups>
 
         <classes>
-            <class name ="BlogTests">
+            <class name ="com.romanceabroad.ui.BlogTests">
                 <methods>
                     <include name = ".*Link" />
                 </methods>
             </class>
-            <class name ="GiftsTests">
+            <class name ="com.romanceabroad.ui.GiftsTests">
                 <methods>
                     <include name = ".*Link" />
                 </methods>
             </class>
-            <class name ="HowWeWorkTests">
+            <class name ="com.romanceabroad.ui.HowWeWorkTests">
                 <methods>
                     <include name = ".*Link" />
                     <include name = ".*Title.*" />
                     <include name = ".*Content.*" />
                 </methods>
             </class>
-            <class name ="MainTests">
+            <class name ="com.romanceabroad.ui.MainTests">
                 <methods>
                     <include name = ".*Play.*" />
                     <include name = ".*Count.*" />
                     <include name = ".*Main.*" />
                 </methods>
             </class>
-            <class name ="PhotosTests">
+            <class name ="com.romanceabroad.ui.PhotosTests">
                 <methods>
                     <include name = ".*Link" />
                     <include name = ".*Add.*" />
                 </methods>
             </class>
-            <class name ="PrettyWomenTests">
+            <class name ="com.romanceabroad.ui.PrettyWomenTests">
                 <methods>
                     <include name = ".*Link" />
                     <include name = ".*Search.*" />
                     <include name = ".*Third.*" />
                 </methods>
             </class>
-            <class name ="SignInTests">
+            <class name ="com.romanceabroad.ui.SignInTests">
                 <methods>
                     <include name = ".*Link" />
                 </methods>
             </class>
-            <class name ="ContactUsTests">
+            <class name ="com.romanceabroad.ui.ContactUsTests">
                 <methods>
                     <include name = ".*ContactUs.*" />
                 </methods>
             </class>
-            <class name ="TourToUkraineTests">
+            <class name ="com.romanceabroad.ui.TourToUkraineTests">
                 <methods>
                     <include name = ".*Link" />
                 </methods>
             </class>
-            <class name ="RegistrationTests">
+            <class name ="com.romanceabroad.ui.RegistrationTests">
                 <methods>
                     <include name = ".*FillIn.*" />
                 </methods>
@@ -85,7 +85,7 @@
 
         <classes>
 
-            <class name ="RegistrationTests"/>
+            <class name ="com.romanceabroad.ui.RegistrationTests"/>
 
 
             <methods>

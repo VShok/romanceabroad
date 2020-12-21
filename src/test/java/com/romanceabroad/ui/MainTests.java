@@ -1,3 +1,5 @@
+package com.romanceabroad.ui;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
@@ -45,5 +47,10 @@ public class MainTests extends BaseUI {
         } else {
             Assert.fail(Data.notMatched);
         }
+    }
+
+    @Test(priority = 4, enabled = true, groups = {"user", "admin"})
+    public void print() {
+        mainPage.javaWait(5000);
     }
 }

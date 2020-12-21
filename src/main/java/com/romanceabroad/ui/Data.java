@@ -1,4 +1,4 @@
-
+package com.romanceabroad.ui;
 
 public class Data {
 
@@ -6,7 +6,7 @@ public class Data {
 
     public static final String MAIN_URL = "https://romanceabroad.com/";
 
-    // Registration Data
+    // Registration com.romanceabroad.ui.Data
     public static final String email1 = "1grounded@gmail.com";
     public static final String email2 = "2groundedmail.ru";
     public static final String email3 = "3grounded@yahoo.com";
@@ -35,7 +35,7 @@ public class Data {
     public static final String expectedTourUkraineUrl = "https://romanceabroad.com/store/sweets/20-tour_to_ukraine";
     public static final String expectedContactUsUrl = "https://romanceabroad.com/tickets/";
 
-    // Login Data
+    // Login com.romanceabroad.ui.Data
     public static final String expectedLogInTitle = "Login";
 
     // Main Page Titles
