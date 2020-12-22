@@ -61,12 +61,23 @@ public class PrettyWomenTests extends BaseUI {
         prettyWomenPage.getDropDownListByText(Locators.FILTER_MIN_AGE, minAge);
         prettyWomenPage.clickSearchButton();
 
-        List<WebElement> infoAboutUser = driver.findElements(By.xpath("//div[@class='text-overflow']"));
+        List<WebElement> infoAboutUser = driver.findElements(Locators.TEXT_USER_INFO);
         for (int i = 0; i<infoAboutUser.size(); i++) {
-            WebElement text = infoAboutUser.get(i);
-            String info = text.getText();
-            System.out.println(info);
-            infoAboutUser = driver.findElements(By.xpath("//div[@class='text-overflow']"));
+            if (i % 2==0) {
+                WebElement text = infoAboutUser.get(i);
+                String info = text.getText();
+                String[] splitedPhrase = info.split(", ");
+                String age = splitedPhrase[1];
+                int ageNum = Integer.parseInt(age);
+
+                if(min <= ageNum || ageNum <= max) {
+                    System.out.println("This age: " + ageNum + " is correct");
+                } else {
+                    Assert.fail("Wrong age: " + ageNum);
+                }
+            }
+            mainPage.javaWaitSec(3);
+            infoAboutUser = driver.findElements(Locators.TEXT_USER_INFO);
         }
     }
 }

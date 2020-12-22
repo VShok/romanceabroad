@@ -2,6 +2,7 @@ package com.romanceabroad.ui;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.List;
 
@@ -9,11 +10,15 @@ import java.util.List;
 public class BlogTests extends BaseUI {
     String titleOfArticle;
     String nameOfArticle;
+    String currentUrl;
     public static final boolean testCase16 = true;
 
     @Test(enabled = testCase16, groups = {"user", "admin"})
     public void testBlogLink () {
         mainPage.clickBlogLink();
+         currentUrl = driver.getCurrentUrl();
+        System.out.println(currentUrl);
+        Assert.assertEquals(Data.expectedBlogUrl, currentUrl);
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy((Locators.BLOGS_BLOG_PAGE)));
         List <WebElement> blogs = blogPage.collectAllLinksOfArticles();
         for (int i = 0; i < blogs.size(); i++) {
@@ -22,10 +27,7 @@ public class BlogTests extends BaseUI {
             link.click();
             titleOfArticle = blogPage.getAnyTitle();
             driver.navigate().back();
-            //Assert.assertEquals(nameOfArticle, titleOfArticle);
             blogs = blogPage.collectAllLinksOfArticles();
-            softAssert.assertEquals(nameOfArticle, titleOfArticle, Data.notMatched);
             }
-        softAssert.assertAll();
         }
     }

@@ -66,4 +66,10 @@ public class Data {
     public static final String matched = "There is a match";
     public static final String notMatched = "There is no a match";
 
+    //User profile
+    public static final String expectedTitleAllPhotos = "Ukrainian women photos";
+    public static final String expectedTitleGallery = "Gallery";
+    public static final String expectedTitlePhotoGallery = "Photo gallery";
+    public static final String expectedTitleVideoGallery = "Video gallery";
+    public static final String expectedTitleAlbumsGallery = "Gallery albums";
 }

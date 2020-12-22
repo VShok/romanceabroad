@@ -43,6 +43,7 @@
                 <methods>
                     <include name = ".*Link" />
                     <include name = ".*Add.*" />
+                    <include name= ".*Tabs" />
                 </methods>
             </class>
             <class name ="com.romanceabroad.ui.PrettyWomenTests">
@@ -50,6 +51,7 @@
                     <include name = ".*Link" />
                     <include name = ".*Search.*" />
                     <include name = ".*Third.*" />
+                    <include name = ".*Results" />
                 </methods>
             </class>
             <class name ="com.romanceabroad.ui.SignInTests">
