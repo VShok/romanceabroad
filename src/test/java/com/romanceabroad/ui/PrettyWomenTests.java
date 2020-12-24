@@ -80,5 +80,31 @@ public class PrettyWomenTests extends BaseUI {
             infoAboutUser = driver.findElements(Locators.TEXT_USER_INFO);
         }
     }
+
+    @Test
+    public void testUserProfile() {
+        mainPage.clickPrettyWomenLink();
+        driver.findElement(Locators.USER_PROFILE).click();
+        mainPage.javaWaitSec(2);
+        String currentUrl;
+
+        List<WebElement> informationUserProfile = driver.findElements(Locators.TAB_PRETTY_WOMEN_PROFILE);
+        for (int i = 0; i < informationUserProfile.size(); i++) {
+            informationUserProfile.get(i).click();
+            mainPage.javaWaitSec(3);
+            prettyWomenPage.getAnyTitle();
+            if (i == 0) {
+                currentUrl = driver.getCurrentUrl();
+                Assert.assertEquals(currentUrl, Data.expectedWallUserProfile);
+            } else if (i == 1) {
+                currentUrl = driver.getCurrentUrl();
+                Assert.assertEquals(currentUrl, Data.expectedProfileUserProfile);
+            } else if (i == 2) {
+                currentUrl = driver.getCurrentUrl();
+                Assert.assertEquals(currentUrl, Data.expectedGalleryUserProfile);
+            }
+            informationUserProfile = driver.findElements(Locators.TAB_PRETTY_WOMEN_PROFILE);
+        }
+    }
 }
 

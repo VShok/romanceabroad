@@ -8,18 +8,18 @@ import java.util.ArrayList;
 
 public class DataProviders {
 
-    @DataProvider(name="PrettyWomen")
+    @DataProvider(name = "PrettyWomen")
     public static Object[][] testSearchFeature() {
         return new Object[][]{
-                {"18","80","Default"},
-                {"18","19","Name"},
-                {"30","40","Views"},
-                {"60","80","Registration date"}
+                {"18", "80", "Default"},
+                {"18", "19", "Name"},
+                {"30", "40", "Views"},
+                {"60", "80", "Registration date"}
         };
 
     }
 
-    @DataProvider(name="Registration2")
+    @DataProvider(name = "Registration2")
     public static Object[][] testRegistration2() {
         return new Object[][]{
                 {Data.email1, Data.username, true},
@@ -32,10 +32,10 @@ public class DataProviders {
     @DataProvider(name = "Registration")
     public static Object[][] testRegistration1() throws Exception {
         ArrayList<Object[]> out = new ArrayList<>();
-        Files.readAllLines(Paths.get("Registration.csv")).stream().forEach(s-> {
+        Files.readAllLines(Paths.get("Registration.csv")).stream().forEach(s -> {
 
             String[] data = s.split(",");
-            out.add(new Object[] {data[0],data[1],data[2],data[3],data[4],data[5],data[6],data[7]});
+            out.add(new Object[]{data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7]});
         });
 
         return out.toArray(new Object[out.size()][]);
@@ -44,13 +44,19 @@ public class DataProviders {
     @DataProvider(name = "SignIn")
     public static Object[][] testSignIn() throws Exception {
         ArrayList<Object[]> out = new ArrayList<>();
-        Files.readAllLines(Paths.get("SignIn.csv")).stream().forEach(s-> {
+        Files.readAllLines(Paths.get("SignIn.csv")).stream().forEach(s -> {
 
             String[] data = s.split(",");
-            out.add(new Object[] {data[0],data[1]});
+            out.add(new Object[]{data[0], data[1]});
         });
 
         return out.toArray(new Object[out.size()][]);
     }
 
+    @DataProvider(name = "SignInNeg")
+    public static Object[][] testSignInNeg() throws Exception {
+        return new Object[][]{
+                {"uhduwuw@.com", "vfsdssveegf"}
+        };
+    }
 }

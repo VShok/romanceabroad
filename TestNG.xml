@@ -57,6 +57,7 @@
             <class name ="com.romanceabroad.ui.SignInTests">
                 <methods>
                     <include name = ".*Link" />
+                    <include name=".*Neg" />
                 </methods>
             </class>
             <class name ="com.romanceabroad.ui.ContactUsTests">

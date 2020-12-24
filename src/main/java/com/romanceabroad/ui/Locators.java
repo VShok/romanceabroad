@@ -45,6 +45,8 @@ public class Locators {
     public static final By SORT_BY_VIEWS =  By.xpath("//select[@class='form-control']//option[@value='views']");
     public static final By SORT_BY_COMMENTS =  By.xpath("//select[@class='form-control']//option[@value='comments_counts']");
     public static final By SORT_LOWEST_HIGHEST = By.xpath("//span[@id='gallery_media_sorter'][@class='form-group ']//i[@data-role='sorter-dir']");
+    public static final By BLOCK_GALLERY_ALBUMS = By.xpath("//div[@class='g-flatty-block']");
+    public static final By TYPE_OF_ALBUMS = By.xpath("//span[@data-click='album']");
 
     // Registration Page
 
@@ -76,6 +78,8 @@ public class Locators {
     public static final By BUTTON_SEARCH = By.cssSelector("#main_search_button_user_advanced");
     public static final By THIRD_PAGE_PRETTY_WOMEN = By.xpath("//div[@id='pages_block_2']//a[@data-page='3']");
     public static final By TEXT_USER_INFO = By.xpath("//div[@class='text-overflow']");
+    public static final By USER_PROFILE = By.xpath("//a[@class='g-users-gallery__name'][@href='https://romanceabroad.com/users/view/360/profile']");
+    public static final By TAB_PRETTY_WOMEN_PROFILE = By.xpath("//div[@class='profile-menu clearfix']//ul/li");
 
     // Sigh In Form
 

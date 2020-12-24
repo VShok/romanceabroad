@@ -34,6 +34,9 @@ public class Data {
     public static final String expectedPrettyWomenUrl = "https://romanceabroad.com/users/search";
     public static final String expectedTourUkraineUrl = "https://romanceabroad.com/store/sweets/20-tour_to_ukraine";
     public static final String expectedContactUsUrl = "https://romanceabroad.com/tickets/";
+    public static final String expectedWallUserProfile = "https://romanceabroad.com/users/view/360/wall";
+    public static final String expectedProfileUserProfile = "https://romanceabroad.com/users/view/360/profile";
+    public static final String expectedGalleryUserProfile = "https://romanceabroad.com/users/view/360/gallery";
 
     // Login com.romanceabroad.ui.Data
     public static final String expectedLogInTitle = "Login";
@@ -72,4 +75,8 @@ public class Data {
     public static final String expectedTitlePhotoGallery = "Photo gallery";
     public static final String expectedTitleVideoGallery = "Video gallery";
     public static final String expectedTitleAlbumsGallery = "Gallery albums";
+
+    //Media
+
+    public static final String textMedia= "On our website you have access to photos of all different kinds of women.";
 }

@@ -1,5 +1,6 @@
 package com.romanceabroad.ui;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
@@ -52,10 +53,19 @@ public class PhotosTests extends BaseUI {
                 Assert.assertEquals(actualTitle, Data.expectedTitlePhotoGallery);
             } else if (i == 2) {
                 Assert.assertEquals(actualTitle, Data.expectedTitleVideoGallery);
+                String textMedia = driver.findElement
+                        (Locators.BLOCK_GALLERY_ALBUMS).getText();
+                System.out.println(textMedia);
+                if(textMedia.contains(Data.textMedia)) {
+                    System.out.println("Text Media is correct");
+                }
             } else if (i == 3) {
                 Assert.assertEquals(actualTitle, Data.expectedTitleAlbumsGallery);
+                mainPage.javaWaitSec(2);
+                Assert.assertTrue(driver.findElement(Locators.TYPE_OF_ALBUMS).isDisplayed());
             }
             userTabs = driver.findElements(Locators.LINK_TAB_USER_PROFILE);
         }
     }
+
 }
