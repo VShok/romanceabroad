@@ -1,8 +1,12 @@
 package com.romanceabroad.ui;
-
+import com.automation.remarks.testng.VideoListener;
+import com.automation.remarks.video.annotations.Video;
+import org.testng.annotations.Listeners;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+@Listeners(VideoListener.class)
 
 
 public class RegistrationTests extends BaseUI {

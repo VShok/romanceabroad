@@ -5,14 +5,19 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.List;
+import com.automation.remarks.testng.VideoListener;
+import com.automation.remarks.video.annotations.Video;
+import org.testng.annotations.Listeners;
 
 
+@Listeners(VideoListener.class)
 public class BlogTests extends BaseUI {
     String titleOfArticle;
     String nameOfArticle;
     String currentUrl;
     public static final boolean testCase16 = true;
 
+    @Video(name="Blog test")
     @Test(enabled = testCase16, groups = {"user", "admin"})
     public void testBlogLink () {
         mainPage.clickBlogLink();

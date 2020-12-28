@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestSuite" duration-ms="39635" started-at="2020-12-28T14:59:05 CST" finished-at="2020-12-28T14:59:45 CST">
+    <groups>
+      <group name="admin">
+        <method signature="BlogTests.testBlogLink()[pri:0, instance:com.romanceabroad.ui.BlogTests@28d25987]" name="testBlogLink" class="com.romanceabroad.ui.BlogTests"/>
+      </group> <!-- admin -->
+      <group name="user">
+        <method signature="BlogTests.testBlogLink()[pri:0, instance:com.romanceabroad.ui.BlogTests@28d25987]" name="testBlogLink" class="com.romanceabroad.ui.BlogTests"/>
+      </group> <!-- user -->
+    </groups>
+    <test name="Chrome tests" duration-ms="39635" started-at="2020-12-28T14:59:05 CST" finished-at="2020-12-28T14:59:45 CST">
+      <class name="com.romanceabroad.ui.BlogTests">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.BlogTests@28d25987]" name="setup" is-config="true" duration-ms="11164" started-at="2020-12-28T14:59:05 CST" finished-at="2020-12-28T14:59:16 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.BlogTests.testBlogLink()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testBlogLink()[pri:0, instance:com.romanceabroad.ui.BlogTests@28d25987]" name="testBlogLink" duration-ms="28373" started-at="2020-12-28T14:59:16 CST" finished-at="2020-12-28T14:59:45 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBlogLink -->
+        <test-method status="PASS" signature="afterActions()[pri:0, instance:com.romanceabroad.ui.BlogTests@28d25987]" name="afterActions" is-config="true" duration-ms="1" started-at="2020-12-28T14:59:45 CST" finished-at="2020-12-28T14:59:45 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+      </class> <!-- com.romanceabroad.ui.BlogTests -->
+    </test> <!-- Chrome tests -->
+  </suite> <!-- TestSuite -->
+</testng-results>

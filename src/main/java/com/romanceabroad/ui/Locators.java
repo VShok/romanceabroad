@@ -106,4 +106,7 @@ public class Locators {
     public static final By H1_TITLE = By.xpath("//h1");
     public static final By TAB_OF_MAIN_PAGE = By.xpath("//ul[@class='navbar-nav']//li");
     public static final By IMAGES = By.xpath("//a[@class='g-pic-border g-rounded']");
+
+    //Footer
+    public static final By LINKS_FOOTER = By.xpath("//div[@class='row']//ul//div");
 }

@@ -42,21 +42,10 @@ public class DataProviders {
     }
 
     @DataProvider(name = "SignIn")
-    public static Object[][] testSignIn() throws Exception {
-        ArrayList<Object[]> out = new ArrayList<>();
-        Files.readAllLines(Paths.get("SignIn.csv")).stream().forEach(s -> {
-
-            String[] data = s.split(",");
-            out.add(new Object[]{data[0], data[1]});
-        });
-
-        return out.toArray(new Object[out.size()][]);
-    }
-
-    @DataProvider(name = "SignInNeg")
     public static Object[][] testSignInNeg() throws Exception {
         return new Object[][]{
-                {"uhduwuw@.com", "vfsdssveegf"}
+                {"uhduwuw@.com", "vfsdssveegf", false},
+                {"manthesky@gmail.com","ooaxoamaooom450941!", true}
         };
     }
 }

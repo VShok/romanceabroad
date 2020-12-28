@@ -87,36 +87,4 @@ public class Conditions extends BaseUI {
             }
         }
     }
-
-    @Test
-    public void test7() {
-        String actualURLPrettyWomen;
-        List<WebElement> links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
-        System.out.println(links.size());
-
-        for (int i = 0; i < links.size(); i++) {
-            mainPage.getCurrentTitleHomePages(i);
-            //links.get(i).click();
-            mainPage.ajaxClick(links.get(i));
-            if (mainPage.getCurrentTitleHomePages(i).contains("WORK")) {
-                mainPage.getTitle();
-                Assert.assertEquals(mainPage.getTitle(), Data.expectedTitleHowItWorksPage);
-            }
-            if (mainPage.getCurrentTitleHomePages(i).contains("PRETTY WOMEN")) {
-                mainPage.getTitle();
-                actualURLPrettyWomen = driver.getCurrentUrl();
-                Assert.assertEquals(Data.expectedTitlePrettyWomen, mainPage.getTitle());
-                Assert.assertEquals(Data.expectedPrettyWomenUrl, actualURLPrettyWomen);
-                driver.findElement(Locators.IMAGES).isDisplayed();
-                if(actualURLPrettyWomen.contains("#")) {
-                    Assert.fail("It contains restricted #");
-                } else {
-                    System.out.println("No special characters, It's a good URL");
-                }
-            }
-
-            driver.get(Data.MAIN_URL);
-            links = driver.findElements(Locators.TAB_OF_MAIN_PAGE);
-        }
-    }
 }

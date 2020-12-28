@@ -1,10 +1,10 @@
 package com.romanceabroad.ui;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import com.automation.remarks.testng.VideoListener;
+import com.automation.remarks.video.annotations.Video;
+import org.testng.annotations.Listeners;
 
 import java.util.List;
 
@@ -16,7 +16,8 @@ public class PrettyWomenTests extends BaseUI {
     public static final boolean testCase3 = true;
     public static final boolean testCase4 = true;
     public static final boolean testCase18 = true;
-
+    public static final boolean testCase20 = true;
+    public static final boolean testCase21 = true;
 
     @Test(priority = 1, enabled = testCase2, groups = {"user", "admin"})
     public void testPrettyWomenLink() {
@@ -81,7 +82,7 @@ public class PrettyWomenTests extends BaseUI {
         }
     }
 
-    @Test
+    @Test(priority = 5, enabled = testCase20, groups = {"user", "admin"})
     public void testUserProfile() {
         mainPage.clickPrettyWomenLink();
         driver.findElement(Locators.USER_PROFILE).click();
@@ -95,15 +96,49 @@ public class PrettyWomenTests extends BaseUI {
             prettyWomenPage.getAnyTitle();
             if (i == 0) {
                 currentUrl = driver.getCurrentUrl();
-                Assert.assertEquals(currentUrl, Data.expectedWallUserProfile);
+                Assert.assertTrue(currentUrl.contains("/wall"));
             } else if (i == 1) {
                 currentUrl = driver.getCurrentUrl();
-                Assert.assertEquals(currentUrl, Data.expectedProfileUserProfile);
+                Assert.assertTrue(currentUrl.contains("/profile"));
             } else if (i == 2) {
                 currentUrl = driver.getCurrentUrl();
-                Assert.assertEquals(currentUrl, Data.expectedGalleryUserProfile);
+                Assert.assertTrue(currentUrl.contains("/gallery"));
             }
             informationUserProfile = driver.findElements(Locators.TAB_PRETTY_WOMEN_PROFILE);
+        }
+    }
+
+    @Test(priority = 6, enabled = testCase21, groups = {"user", "admin"})
+    public void testFooter() {
+        String text;
+        mainPage.clickGiftsLink();
+        mainPage.javaWaitSec(2);
+        mainPage.scrollToBottomOfPage();
+        List<WebElement> footerLinks = driver.findElements(Locators.LINKS_FOOTER);
+        for (int i = 0; i < footerLinks.size() - 1; i++) {
+            if (i == 0) {
+                text = footerLinks.get(i).getText();
+                Assert.assertTrue(text.contains("Contact"));
+            } else if (i == 1) {
+                text = footerLinks.get(i).getText();
+                Assert.assertTrue(text.contains("Sitemap"));
+            } else if (i == 2) {
+                text = footerLinks.get(i).getText();
+                Assert.assertTrue(text.contains("How it works"));
+            } else if (i == 3) {
+                text = footerLinks.get(i).getText();
+                Assert.assertTrue(text.contains("News"));
+            } else if (i == 4) {
+                text = footerLinks.get(i).getText();
+                Assert.assertTrue(text.contains("Privacy"));
+            } else if (i == 5) {
+                text = footerLinks.get(i).getText();
+                Assert.assertTrue(text.contains("Terms of use"));
+            }
+            footerLinks.get(i).click();
+            mainPage.javaWaitSec(1);
+            driver.navigate().back();
+            footerLinks = driver.findElements(Locators.LINKS_FOOTER);
         }
     }
 }
