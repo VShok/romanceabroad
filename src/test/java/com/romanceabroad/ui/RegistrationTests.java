@@ -13,9 +13,12 @@ public class RegistrationTests extends BaseUI {
 
     public static final boolean testCase1 = true;
     public static final boolean testCase18 = true;
+    @Video(name="Registration test")
    @Test(dataProvider = "Registration", enabled = testCase1, groups = {"user", "admin"}, dataProviderClass = DataProviders.class)
     public void testFillInformationRegistrationPage(String email, String password, String day, String month,
                                                     String year, String phone, String city, String location) {
+
+        Reports.log("Click Join button");
         System.out.println(email);
         mainPage.clickRegistrationButton();
         mainPage.fillInEmailAndPassword(email, password);
@@ -33,6 +36,7 @@ public class RegistrationTests extends BaseUI {
         mainPage.clickRegistrationButton();
         mainPage.fillInEmailAndPassword(email, Data.password);
         if(!requirement) {
+            Reports.log("Error message is not displayed");
             Assert.assertTrue(driver.findElement(Locators.TOOLTIP_ERROR).isDisplayed());
         } else {
             mainPage.clickNextButton();

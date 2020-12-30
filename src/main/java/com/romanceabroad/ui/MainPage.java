@@ -18,6 +18,7 @@ public class MainPage extends BaseActions {
     }
 
     public void clickNextButton() {
+        Reports.log("Click Next button");
         driver.findElement(Locators.BUTTON_NEXT);
     }
 
@@ -76,29 +77,48 @@ public class MainPage extends BaseActions {
     }
 
     public void clickRegistrationButton() {
+        Reports.log("Click Join button");
         driver.findElement(Locators.BUTTON_REGISTRATION).click();
     }
     public void fillInEmailAndPassword(String email, String password) {
+        Reports.log("Type email in the text field" + email);
         driver.findElement(Locators.TEXT_FIELD_EMAIL).sendKeys(email);
+
+        Reports.log("Type password in the text field" + password);
         driver.findElement(Locators.TEXT_FIELD_PASSWORD).sendKeys(password);
+
+        Reports.log("Click Next button");
         driver.findElement(Locators.BUTTON_NEXT).click();
     }
     public void fillInFullInformation(String username, String day, String month, String year, String phone, String city, String location) {
+        Reports.log("Type username in the text field" + username);
         driver.findElement(Locators.TEXT_FIELD_USERNAME).sendKeys(username);
 
+        Reports.log("Choose day from the list" + day);
         driver.findElement(Locators.BUTTON_DAY_SELECT).click();
         clickValueOfList(Locators.LIST_VALUE_DAY, day);
 
+        Reports.log("Choose month from the list" + month);
         driver.findElement(Locators.BUTTON_MONTH_SELECT).click();
         clickValueOfList(Locators.LIST_VALUE_MONTH, month);
 
+        Reports.log("Choose year from the list" + year);
         driver.findElement(Locators.BUTTON_YEAR_SELECT).click();
         clickValueOfList(Locators.LIST_VALUE_YEAR, year);
 
+        Reports.log("Type phone number in the text field" + phone);
         driver.findElement(Locators.TEXT_FIELD_PHONE).sendKeys(phone);
+
+        Reports.log("Click on confirmation checkbox");
         driver.findElement(Locators.CHECKBOX_CONFIRMATION).click();
+
+        Reports.log("Clear the location");
         driver.findElement(Locators.AUTO_FILLING_FORM_LOCATION).clear();
+
+        Reports.log("Type the city in the text field" + city);
         driver.findElement(Locators.AUTO_FILLING_FORM_LOCATION).sendKeys(city);
+
+        Reports.log("Type the location in the text field" + location);
         clickValueOfList(Locators.LIST_VALUE_LOCATION, location);
     }
 
