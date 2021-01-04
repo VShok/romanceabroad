@@ -10,7 +10,7 @@ public class SignInTests extends BaseUI {
 
 
     @Test(dataProvider = "SignIn",enabled = testCase5, groups = {"user", "admin"}, dataProviderClass = DataProviders.class)
-    public void testSignInFillInLoginPassword (String email, String password) {
+    public void testSignInFillInLoginPassword (String email, String password, Boolean condition) {
 
         mainPage.clickSignInLink();
 

@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 26, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 601.663 s <<< FAILURE! - in TestSuite
+com.romanceabroad.ui.PhotosTests.testTabs  Time elapsed: 2.183 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//h1"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Victors-MacBook-Air.local', ip: '2601:241:8680:7be0:0:0:0:208a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/hk/_x3rb27x6d7...}, goog:chromeOptions: {debuggerAddress: localhost:51856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 001b9e41f8c8ec41734e5f9b4fc72bf2
+*** Element info: {Using=xpath, value=//h1}
+	at com.romanceabroad.ui.PhotosTests.testTabs(PhotosTests.java:46)
+
