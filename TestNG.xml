@@ -5,10 +5,10 @@
 
 
     <test name="ChromeTestCases">
-        <parameter name="version" value="59.0"/>
+        <parameter name="version" value="87.0"/>
         <parameter name="browser" value="chrome"/>
         <parameter name="testBox" value="sauce"/>
-        <parameter name="platform" value="Windows 10"/>
+        <parameter name="platform" value="Mac"/>
 
         <groups>
             <run>
@@ -18,12 +18,13 @@
         </groups>
 
         <classes>
-            <class name ="com.romanceabroad.ui.BlogTests">
+
+            <class name ="com.romanceabroad.ui.GiftsTests">
                 <methods>
                     <include name = ".*Link" />
                 </methods>
             </class>
-            <class name ="com.romanceabroad.ui.GiftsTests">
+            <!--class name ="com.romanceabroad.ui.BlogTests">
                 <methods>
                     <include name = ".*Link" />
                 </methods>
@@ -77,7 +78,7 @@
                 <methods>
                     <include name = ".*FillIn.*" />
                 </methods>
-            </class>
+            </class!-->
     </classes>
 
 

@@ -1,0 +1,160 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 78, Failures: 52, Errors: 0, Skipped: 26, Time elapsed: 7.609 s <<< FAILURE! - in TestSuite
+com.romanceabroad.ui.BlogTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.BlogTests.testBlogLink()](0)  Time elapsed: 0.999 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.BlogTests.afterActions[[TestResult name={null} status=CREATED method=BlogTests.testBlogLink()[pri:0, instance:com.romanceabroad.ui.BlogTests@23e028a9] output={null}]](0)  Time elapsed: 2.198 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.GiftsTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.GiftsTests.testGiftsLink()](0)  Time elapsed: 2.204 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.GiftsTests.afterActions[[TestResult name={null} status=CREATED method=GiftsTests.testGiftsLink()[pri:0, instance:com.romanceabroad.ui.GiftsTests@3dd4520b] output={null}]](0)  Time elapsed: 0.077 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.HowWeWorkTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.HowWeWorkTests.testHowWeWorkLink()](0)  Time elapsed: 0.081 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.HowWeWorkTests.afterActions[[TestResult name={null} status=CREATED method=HowWeWorkTests.testHowWeWorkLink()[pri:1, instance:com.romanceabroad.ui.HowWeWorkTests@5ae63ade] output={null}]](0)  Time elapsed: 0.102 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.HowWeWorkTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.HowWeWorkTests.testMainTitleTestCase13()](0)  Time elapsed: 0.104 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.HowWeWorkTests.afterActions[[TestResult name={null} status=CREATED method=HowWeWorkTests.testMainTitleTestCase13()[pri:2, instance:com.romanceabroad.ui.HowWeWorkTests@5ae63ade] output={null}]](0)  Time elapsed: 0.058 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.HowWeWorkTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.HowWeWorkTests.testCountPagesContentTestCase14()](0)  Time elapsed: 0.077 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.HowWeWorkTests.afterActions[[TestResult name={null} status=CREATED method=HowWeWorkTests.testCountPagesContentTestCase14()[pri:3, instance:com.romanceabroad.ui.HowWeWorkTests@5ae63ade] output={null}]](0)  Time elapsed: 0.041 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.MainTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.MainTests.testYoutubePlayButtonTestCase9()](0)  Time elapsed: 0.044 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.MainTests.afterActions[[TestResult name={null} status=CREATED method=MainTests.testYoutubePlayButtonTestCase9()[pri:1, instance:com.romanceabroad.ui.MainTests@610694f1] output={null}]](0)  Time elapsed: 0.119 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.MainTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.MainTests.testCheckCountTitlesTestCase10()](0)  Time elapsed: 0.124 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.MainTests.afterActions[[TestResult name={null} status=CREATED method=MainTests.testCheckCountTitlesTestCase10()[pri:2, instance:com.romanceabroad.ui.MainTests@610694f1] output={null}]](0)  Time elapsed: 0.063 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.MainTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.MainTests.testCheckMainTitlesTestCase11()](0)  Time elapsed: 0.065 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.MainTests.afterActions[[TestResult name={null} status=CREATED method=MainTests.testCheckMainTitlesTestCase11()[pri:3, instance:com.romanceabroad.ui.MainTests@610694f1] output={null}]](0)  Time elapsed: 0.051 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.PhotosTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.PhotosTests.testPhotosLink()](0)  Time elapsed: 0.053 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.PhotosTests.afterActions[[TestResult name={null} status=CREATED method=PhotosTests.testPhotosLink()[pri:1, instance:com.romanceabroad.ui.PhotosTests@43814d18] output={null}]](0)  Time elapsed: 0.046 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.PhotosTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.PhotosTests.testClickButtonAddPhoto()](0)  Time elapsed: 0.048 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.PhotosTests.afterActions[[TestResult name={null} status=CREATED method=PhotosTests.testClickButtonAddPhoto()[pri:2, instance:com.romanceabroad.ui.PhotosTests@43814d18] output={null}]](0)  Time elapsed: 0.069 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.PhotosTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.PhotosTests.testTabs()](0)  Time elapsed: 0.086 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.PhotosTests.afterActions[[TestResult name={null} status=CREATED method=PhotosTests.testTabs()[pri:3, instance:com.romanceabroad.ui.PhotosTests@43814d18] output={null}]](0)  Time elapsed: 0.065 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.PrettyWomenTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.PrettyWomenTests.testPrettyWomenLink()](0)  Time elapsed: 0.068 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.PrettyWomenTests.afterActions[[TestResult name={null} status=CREATED method=PrettyWomenTests.testPrettyWomenLink()[pri:1, instance:com.romanceabroad.ui.PrettyWomenTests@5c5a1b69] output={null}]](0)  Time elapsed: 0.177 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.PrettyWomenTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.PrettyWomenTests.searchDifferentResults(java.lang.String,java.lang.String,java.lang.String)](0)  Time elapsed: 0.192 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.PrettyWomenTests.afterActions[[TestResult name={null} status=CREATED method=PrettyWomenTests.searchDifferentResults(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.romanceabroad.ui.PrettyWomenTests@5c5a1b69] output={null}]](0)  Time elapsed: 0.082 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.PrettyWomenTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.PrettyWomenTests.searchDifferentResults(java.lang.String,java.lang.String,java.lang.String)](0)  Time elapsed: 0.082 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.PrettyWomenTests.afterActions[[TestResult name={null} status=CREATED method=PrettyWomenTests.searchDifferentResults(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.romanceabroad.ui.PrettyWomenTests@5c5a1b69] output={null}]](0)  Time elapsed: 0.045 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.PrettyWomenTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.PrettyWomenTests.searchDifferentResults(java.lang.String,java.lang.String,java.lang.String)](0)  Time elapsed: 0.046 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.PrettyWomenTests.afterActions[[TestResult name={null} status=CREATED method=PrettyWomenTests.searchDifferentResults(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.romanceabroad.ui.PrettyWomenTests@5c5a1b69] output={null}]](0)  Time elapsed: 0.055 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.PrettyWomenTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.PrettyWomenTests.searchDifferentResults(java.lang.String,java.lang.String,java.lang.String)](0)  Time elapsed: 0.057 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.PrettyWomenTests.afterActions[[TestResult name={null} status=CREATED method=PrettyWomenTests.searchDifferentResults(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.romanceabroad.ui.PrettyWomenTests@5c5a1b69] output={null}]](0)  Time elapsed: 0.119 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.PrettyWomenTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.PrettyWomenTests.testSearchButtonTestCase3()](0)  Time elapsed: 0.122 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.PrettyWomenTests.afterActions[[TestResult name={null} status=CREATED method=PrettyWomenTests.testSearchButtonTestCase3()[pri:3, instance:com.romanceabroad.ui.PrettyWomenTests@5c5a1b69] output={null}]](0)  Time elapsed: 0.059 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.PrettyWomenTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.PrettyWomenTests.testThirdPageTestCase4()](0)  Time elapsed: 0.073 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.PrettyWomenTests.afterActions[[TestResult name={null} status=CREATED method=PrettyWomenTests.testThirdPageTestCase4()[pri:4, instance:com.romanceabroad.ui.PrettyWomenTests@5c5a1b69] output={null}]](0)  Time elapsed: 0.12 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.SignInTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.SignInTests.testSignInFillInLoginPassword(java.lang.String,java.lang.String,java.lang.Boolean)](0)  Time elapsed: 0.132 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.SignInTests.afterActions[[TestResult name={null} status=CREATED method=SignInTests.testSignInFillInLoginPassword(java.lang.String, java.lang.String, java.lang.Boolean)[pri:0, instance:com.romanceabroad.ui.SignInTests@3701eaf6] output={null}]](0)  Time elapsed: 0.112 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.SignInTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.SignInTests.testSignInFillInLoginPassword(java.lang.String,java.lang.String,java.lang.Boolean)](0)  Time elapsed: 0.114 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.SignInTests.afterActions[[TestResult name={null} status=CREATED method=SignInTests.testSignInFillInLoginPassword(java.lang.String, java.lang.String, java.lang.Boolean)[pri:0, instance:com.romanceabroad.ui.SignInTests@3701eaf6] output={null}]](0)  Time elapsed: 0.033 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.ContactUsTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.ContactUsTests.testFillInContactUsPage()](0)  Time elapsed: 0.035 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.ContactUsTests.afterActions[[TestResult name={null} status=CREATED method=ContactUsTests.testFillInContactUsPage()[pri:0, instance:com.romanceabroad.ui.ContactUsTests@627551fb] output={null}]](0)  Time elapsed: 0.052 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.TourToUkraineTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.TourToUkraineTests.testTourToUkraineLink()](0)  Time elapsed: 0.052 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.TourToUkraineTests.afterActions[[TestResult name={null} status=CREATED method=TourToUkraineTests.testTourToUkraineLink()[pri:0, instance:com.romanceabroad.ui.TourToUkraineTests@2b552920] output={null}]](0)  Time elapsed: 0.116 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.RegistrationTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.RegistrationTests.testFillInformationRegistrationPage(java.lang.String,java.lang.String,boolean)](0)  Time elapsed: 0.147 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.RegistrationTests.afterActions[[TestResult name={null} status=CREATED method=RegistrationTests.testFillInformationRegistrationPage(java.lang.String, java.lang.String, boolean)[pri:0, instance:com.romanceabroad.ui.RegistrationTests@2758fe70] output={null}]](0)  Time elapsed: 0.116 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.RegistrationTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.RegistrationTests.testFillInformationRegistrationPage(java.lang.String,java.lang.String,boolean)](0)  Time elapsed: 0.12 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.RegistrationTests.afterActions[[TestResult name={null} status=CREATED method=RegistrationTests.testFillInformationRegistrationPage(java.lang.String, java.lang.String, boolean)[pri:0, instance:com.romanceabroad.ui.RegistrationTests@2758fe70] output={null}]](0)  Time elapsed: 0.11 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.RegistrationTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.RegistrationTests.testFillInformationRegistrationPage(java.lang.String,java.lang.String,boolean)](0)  Time elapsed: 0.11 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.RegistrationTests.afterActions[[TestResult name={null} status=CREATED method=RegistrationTests.testFillInformationRegistrationPage(java.lang.String, java.lang.String, boolean)[pri:0, instance:com.romanceabroad.ui.RegistrationTests@2758fe70] output={null}]](0)  Time elapsed: 0.069 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.RegistrationTests.setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.RegistrationTests.testFillInformationRegistrationPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)](0)  Time elapsed: 0.077 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.romanceabroad.ui.RegistrationTests.afterActions[[TestResult name={null} status=CREATED method=RegistrationTests.testFillInformationRegistrationPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.romanceabroad.ui.RegistrationTests@2758fe70] output={null}]](0)  Time elapsed: 0.389 s  <<< FAILURE!
+java.lang.NullPointerException
+

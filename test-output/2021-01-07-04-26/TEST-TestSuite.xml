@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="7.609" tests="78" errors="0" skipped="26" failures="52">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/victorshokurov/Desktop/GitHub/romanceabroad/target/test-classes:/Users/victorshokurov/Desktop/GitHub/romanceabroad/target/classes:/Users/victorshokurov/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/victorshokurov/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/victorshokurov/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/victorshokurov/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/victorshokurov/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/victorshokurov/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/victorshokurov/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/victorshokurov/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/victorshokurov/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/victorshokurov/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/victorshokurov/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/victorshokurov/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/victorshokurov/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/victorshokurov/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/victorshokurov/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/victorshokurov/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/victorshokurov/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/victorshokurov/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/victorshokurov/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/victorshokurov/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/victorshokurov/.m2/repository/org/testng/testng/7.1.0/testng-7.1.0.jar:/Users/victorshokurov/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/victorshokurov/.m2/repository/com/google/inject/guice/4.1.0/guice-4.1.0-no_aop.jar:/Users/victorshokurov/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/victorshokurov/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/victorshokurov/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/Users/victorshokurov/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar:/Users/victorshokurov/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar:/Users/victorshokurov/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar:/Users/victorshokurov/.m2/repository/org/mongodb/bson/3.3.0/bson-3.3.0.jar:/Users/victorshokurov/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar:/Users/victorshokurov/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar:/Users/victorshokurov/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar:/Users/victorshokurov/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/victorshokurov/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/victorshokurov/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/Users/victorshokurov/.m2/repository/org/jsoup/jsoup/1.9.2/jsoup-1.9.2.jar:/Users/victorshokurov/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/Users/victorshokurov/.m2/repository/com/automation-remarks/video-recorder-testng/1.0/video-recorder-testng-1.0.jar:/Users/victorshokurov/.m2/repository/com/automation-remarks/video-recorder-core/1.0/video-recorder-core-1.0.jar:/Users/victorshokurov/.m2/repository/ru/yandex/qatools/allure/allure-java-annotations/1.4.23/allure-java-annotations-1.4.23.jar:/Users/victorshokurov/.m2/repository/ru/yandex/qatools/allure/allure-model/1.4.23/allure-model-1.4.23.jar:/Users/victorshokurov/.m2/repository/org/jvnet/jaxb2_commons/jaxb2-basics-runtime/0.9.3/jaxb2-basics-runtime-0.9.3.jar:/Users/victorshokurov/.m2/repository/ru/yandex/qatools/properties/properties-loader/1.5/properties-loader-1.5.jar:/Users/victorshokurov/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.3/commons-beanutils-core-1.8.3.jar:/Users/victorshokurov/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:"/>
+    <property name="sun.awt.enableExtraMouseButtons" value="true"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.font.fontmanager" value="sun.font.CFontManager"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="user.country.format" value="US"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/victorshokurov/Desktop/GitHub/romanceabroad/target/surefire/surefirebooter6282061963516353317.jar /Users/victorshokurov/Desktop/GitHub/romanceabroad/target/surefire 2021-01-06T22-26-39_297-jvmRun1 surefire752649083201524286tmp surefire_01921549997005409505tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/victorshokurov/Desktop/GitHub/romanceabroad/target/test-classes:/Users/victorshokurov/Desktop/GitHub/romanceabroad/target/classes:/Users/victorshokurov/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/victorshokurov/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/victorshokurov/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/victorshokurov/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/victorshokurov/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/victorshokurov/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/victorshokurov/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/victorshokurov/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/victorshokurov/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/victorshokurov/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/victorshokurov/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/victorshokurov/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/victorshokurov/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/victorshokurov/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/victorshokurov/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/victorshokurov/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/victorshokurov/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/victorshokurov/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/victorshokurov/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/victorshokurov/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/victorshokurov/.m2/repository/org/testng/testng/7.1.0/testng-7.1.0.jar:/Users/victorshokurov/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/victorshokurov/.m2/repository/com/google/inject/guice/4.1.0/guice-4.1.0-no_aop.jar:/Users/victorshokurov/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/victorshokurov/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/victorshokurov/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/Users/victorshokurov/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar:/Users/victorshokurov/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar:/Users/victorshokurov/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar:/Users/victorshokurov/.m2/repository/org/mongodb/bson/3.3.0/bson-3.3.0.jar:/Users/victorshokurov/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar:/Users/victorshokurov/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar:/Users/victorshokurov/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar:/Users/victorshokurov/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/victorshokurov/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/victorshokurov/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/Users/victorshokurov/.m2/repository/org/jsoup/jsoup/1.9.2/jsoup-1.9.2.jar:/Users/victorshokurov/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/Users/victorshokurov/.m2/repository/com/automation-remarks/video-recorder-testng/1.0/video-recorder-testng-1.0.jar:/Users/victorshokurov/.m2/repository/com/automation-remarks/video-recorder-core/1.0/video-recorder-core-1.0.jar:/Users/victorshokurov/.m2/repository/ru/yandex/qatools/allure/allure-java-annotations/1.4.23/allure-java-annotations-1.4.23.jar:/Users/victorshokurov/.m2/repository/ru/yandex/qatools/allure/allure-model/1.4.23/allure-model-1.4.23.jar:/Users/victorshokurov/.m2/repository/org/jvnet/jaxb2_commons/jaxb2-basics-runtime/0.9.3/jaxb2-basics-runtime-0.9.3.jar:/Users/victorshokurov/.m2/repository/ru/yandex/qatools/properties/properties-loader/1.5/properties-loader-1.5.jar:/Users/victorshokurov/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.3/commons-beanutils-core-1.8.3.jar:/Users/victorshokurov/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/victorshokurov"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/victorshokurov/Desktop/GitHub/romanceabroad"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/victorshokurov/Desktop/GitHub/romanceabroad/target/surefire/surefirebooter6282061963516353317.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_271-b09"/>
+    <property name="user.name" value="victorshokurov"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.16"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/victorshokurov/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/hk/_x3rb27x6d71xdn0qnxzm6640000gn/T/"/>
+    <property name="java.version" value="1.8.0_271"/>
+    <property name="user.dir" value="/Users/victorshokurov/Desktop/GitHub/romanceabroad"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/victorshokurov/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.271-b09"/>
+    <property name="java.ext.dirs" value="/Users/victorshokurov/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_271.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.BlogTests.testBlogLink()](0)" classname="com.romanceabroad.ui.BlogTests" time="0.999">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="testBlogLink" classname="com.romanceabroad.ui.BlogTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=BlogTests.testBlogLink()[pri:0, instance:com.romanceabroad.ui.BlogTests@23e028a9] output={null}]](0)" classname="com.romanceabroad.ui.BlogTests" time="2.198">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.GiftsTests.testGiftsLink()](0)" classname="com.romanceabroad.ui.GiftsTests" time="2.204">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="testGiftsLink" classname="com.romanceabroad.ui.GiftsTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=GiftsTests.testGiftsLink()[pri:0, instance:com.romanceabroad.ui.GiftsTests@3dd4520b] output={null}]](0)" classname="com.romanceabroad.ui.GiftsTests" time="0.077">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.HowWeWorkTests.testHowWeWorkLink()](0)" classname="com.romanceabroad.ui.HowWeWorkTests" time="0.081">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="testHowWeWorkLink" classname="com.romanceabroad.ui.HowWeWorkTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=HowWeWorkTests.testHowWeWorkLink()[pri:1, instance:com.romanceabroad.ui.HowWeWorkTests@5ae63ade] output={null}]](0)" classname="com.romanceabroad.ui.HowWeWorkTests" time="0.102">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.HowWeWorkTests.testMainTitleTestCase13()](0)" classname="com.romanceabroad.ui.HowWeWorkTests" time="0.104">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="testMainTitleTestCase13" classname="com.romanceabroad.ui.HowWeWorkTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=HowWeWorkTests.testMainTitleTestCase13()[pri:2, instance:com.romanceabroad.ui.HowWeWorkTests@5ae63ade] output={null}]](0)" classname="com.romanceabroad.ui.HowWeWorkTests" time="0.058">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.HowWeWorkTests.testCountPagesContentTestCase14()](0)" classname="com.romanceabroad.ui.HowWeWorkTests" time="0.077">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="testCountPagesContentTestCase14" classname="com.romanceabroad.ui.HowWeWorkTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=HowWeWorkTests.testCountPagesContentTestCase14()[pri:3, instance:com.romanceabroad.ui.HowWeWorkTests@5ae63ade] output={null}]](0)" classname="com.romanceabroad.ui.HowWeWorkTests" time="0.041">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.MainTests.testYoutubePlayButtonTestCase9()](0)" classname="com.romanceabroad.ui.MainTests" time="0.044">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="testYoutubePlayButtonTestCase9" classname="com.romanceabroad.ui.MainTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=MainTests.testYoutubePlayButtonTestCase9()[pri:1, instance:com.romanceabroad.ui.MainTests@610694f1] output={null}]](0)" classname="com.romanceabroad.ui.MainTests" time="0.119">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.MainTests.testCheckCountTitlesTestCase10()](0)" classname="com.romanceabroad.ui.MainTests" time="0.124">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="testCheckCountTitlesTestCase10" classname="com.romanceabroad.ui.MainTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=MainTests.testCheckCountTitlesTestCase10()[pri:2, instance:com.romanceabroad.ui.MainTests@610694f1] output={null}]](0)" classname="com.romanceabroad.ui.MainTests" time="0.063">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.MainTests.testCheckMainTitlesTestCase11()](0)" classname="com.romanceabroad.ui.MainTests" time="0.065">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="testCheckMainTitlesTestCase11" classname="com.romanceabroad.ui.MainTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=MainTests.testCheckMainTitlesTestCase11()[pri:3, instance:com.romanceabroad.ui.MainTests@610694f1] output={null}]](0)" classname="com.romanceabroad.ui.MainTests" time="0.051">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.PhotosTests.testPhotosLink()](0)" classname="com.romanceabroad.ui.PhotosTests" time="0.053">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="testPhotosLink" classname="com.romanceabroad.ui.PhotosTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=PhotosTests.testPhotosLink()[pri:1, instance:com.romanceabroad.ui.PhotosTests@43814d18] output={null}]](0)" classname="com.romanceabroad.ui.PhotosTests" time="0.046">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.PhotosTests.testClickButtonAddPhoto()](0)" classname="com.romanceabroad.ui.PhotosTests" time="0.048">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="testClickButtonAddPhoto" classname="com.romanceabroad.ui.PhotosTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=PhotosTests.testClickButtonAddPhoto()[pri:2, instance:com.romanceabroad.ui.PhotosTests@43814d18] output={null}]](0)" classname="com.romanceabroad.ui.PhotosTests" time="0.069">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.PhotosTests.testTabs()](0)" classname="com.romanceabroad.ui.PhotosTests" time="0.086">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="testTabs" classname="com.romanceabroad.ui.PhotosTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=PhotosTests.testTabs()[pri:3, instance:com.romanceabroad.ui.PhotosTests@43814d18] output={null}]](0)" classname="com.romanceabroad.ui.PhotosTests" time="0.065">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.PrettyWomenTests.testPrettyWomenLink()](0)" classname="com.romanceabroad.ui.PrettyWomenTests" time="0.068">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="testPrettyWomenLink" classname="com.romanceabroad.ui.PrettyWomenTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=PrettyWomenTests.testPrettyWomenLink()[pri:1, instance:com.romanceabroad.ui.PrettyWomenTests@5c5a1b69] output={null}]](0)" classname="com.romanceabroad.ui.PrettyWomenTests" time="0.177">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.PrettyWomenTests.searchDifferentResults(java.lang.String,java.lang.String,java.lang.String)](0)" classname="com.romanceabroad.ui.PrettyWomenTests" time="0.192">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.PrettyWomenTests.searchDifferentResults(java.lang.String,java.lang.String,java.lang.String)](0)" classname="com.romanceabroad.ui.PrettyWomenTests" time="0.082">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.PrettyWomenTests.searchDifferentResults(java.lang.String,java.lang.String,java.lang.String)](0)" classname="com.romanceabroad.ui.PrettyWomenTests" time="0.046">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.PrettyWomenTests.searchDifferentResults(java.lang.String,java.lang.String,java.lang.String)](0)" classname="com.romanceabroad.ui.PrettyWomenTests" time="0.057">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="searchDifferentResults" classname="com.romanceabroad.ui.PrettyWomenTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="searchDifferentResults" classname="com.romanceabroad.ui.PrettyWomenTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="searchDifferentResults" classname="com.romanceabroad.ui.PrettyWomenTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="searchDifferentResults" classname="com.romanceabroad.ui.PrettyWomenTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=PrettyWomenTests.searchDifferentResults(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.romanceabroad.ui.PrettyWomenTests@5c5a1b69] output={null}]](0)" classname="com.romanceabroad.ui.PrettyWomenTests" time="0.082">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=PrettyWomenTests.searchDifferentResults(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.romanceabroad.ui.PrettyWomenTests@5c5a1b69] output={null}]](0)" classname="com.romanceabroad.ui.PrettyWomenTests" time="0.045">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=PrettyWomenTests.searchDifferentResults(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.romanceabroad.ui.PrettyWomenTests@5c5a1b69] output={null}]](0)" classname="com.romanceabroad.ui.PrettyWomenTests" time="0.055">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=PrettyWomenTests.searchDifferentResults(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.romanceabroad.ui.PrettyWomenTests@5c5a1b69] output={null}]](0)" classname="com.romanceabroad.ui.PrettyWomenTests" time="0.119">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.PrettyWomenTests.testSearchButtonTestCase3()](0)" classname="com.romanceabroad.ui.PrettyWomenTests" time="0.122">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="testSearchButtonTestCase3" classname="com.romanceabroad.ui.PrettyWomenTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=PrettyWomenTests.testSearchButtonTestCase3()[pri:3, instance:com.romanceabroad.ui.PrettyWomenTests@5c5a1b69] output={null}]](0)" classname="com.romanceabroad.ui.PrettyWomenTests" time="0.059">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.PrettyWomenTests.testThirdPageTestCase4()](0)" classname="com.romanceabroad.ui.PrettyWomenTests" time="0.073">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="testThirdPageTestCase4" classname="com.romanceabroad.ui.PrettyWomenTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=PrettyWomenTests.testThirdPageTestCase4()[pri:4, instance:com.romanceabroad.ui.PrettyWomenTests@5c5a1b69] output={null}]](0)" classname="com.romanceabroad.ui.PrettyWomenTests" time="0.12">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.SignInTests.testSignInFillInLoginPassword(java.lang.String,java.lang.String,java.lang.Boolean)](0)" classname="com.romanceabroad.ui.SignInTests" time="0.132">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.SignInTests.testSignInFillInLoginPassword(java.lang.String,java.lang.String,java.lang.Boolean)](0)" classname="com.romanceabroad.ui.SignInTests" time="0.114">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="testSignInFillInLoginPassword" classname="com.romanceabroad.ui.SignInTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="testSignInFillInLoginPassword" classname="com.romanceabroad.ui.SignInTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=SignInTests.testSignInFillInLoginPassword(java.lang.String, java.lang.String, java.lang.Boolean)[pri:0, instance:com.romanceabroad.ui.SignInTests@3701eaf6] output={null}]](0)" classname="com.romanceabroad.ui.SignInTests" time="0.112">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=SignInTests.testSignInFillInLoginPassword(java.lang.String, java.lang.String, java.lang.Boolean)[pri:0, instance:com.romanceabroad.ui.SignInTests@3701eaf6] output={null}]](0)" classname="com.romanceabroad.ui.SignInTests" time="0.033">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.ContactUsTests.testFillInContactUsPage()](0)" classname="com.romanceabroad.ui.ContactUsTests" time="0.035">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="testFillInContactUsPage" classname="com.romanceabroad.ui.ContactUsTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=ContactUsTests.testFillInContactUsPage()[pri:0, instance:com.romanceabroad.ui.ContactUsTests@627551fb] output={null}]](0)" classname="com.romanceabroad.ui.ContactUsTests" time="0.052">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.TourToUkraineTests.testTourToUkraineLink()](0)" classname="com.romanceabroad.ui.TourToUkraineTests" time="0.052">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="testTourToUkraineLink" classname="com.romanceabroad.ui.TourToUkraineTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=TourToUkraineTests.testTourToUkraineLink()[pri:0, instance:com.romanceabroad.ui.TourToUkraineTests@2b552920] output={null}]](0)" classname="com.romanceabroad.ui.TourToUkraineTests" time="0.116">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.RegistrationTests.testFillInformationRegistrationPage(java.lang.String,java.lang.String,boolean)](0)" classname="com.romanceabroad.ui.RegistrationTests" time="0.147">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.RegistrationTests.testFillInformationRegistrationPage(java.lang.String,java.lang.String,boolean)](0)" classname="com.romanceabroad.ui.RegistrationTests" time="0.12">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.RegistrationTests.testFillInformationRegistrationPage(java.lang.String,java.lang.String,boolean)](0)" classname="com.romanceabroad.ui.RegistrationTests" time="0.11">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="testFillInformationRegistrationPage" classname="com.romanceabroad.ui.RegistrationTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="testFillInformationRegistrationPage" classname="com.romanceabroad.ui.RegistrationTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="testFillInformationRegistrationPage" classname="com.romanceabroad.ui.RegistrationTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Blog test_recording_2021_06_01_22_26_44.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="testFillInformationRegistrationPage" classname="com.romanceabroad.ui.RegistrationTests" time="0">
+    <skipped/>
+    <system-err><![CDATA[Video recording
+[/Users/victorshokurov/Desktop/GitHub/romanceabroad/video/Registration test_recording_2021_06_01_22_26_47.avi]
+]]></system-err>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=RegistrationTests.testFillInformationRegistrationPage(java.lang.String, java.lang.String, boolean)[pri:0, instance:com.romanceabroad.ui.RegistrationTests@2758fe70] output={null}]](0)" classname="com.romanceabroad.ui.RegistrationTests" time="0.116">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=RegistrationTests.testFillInformationRegistrationPage(java.lang.String, java.lang.String, boolean)[pri:0, instance:com.romanceabroad.ui.RegistrationTests@2758fe70] output={null}]](0)" classname="com.romanceabroad.ui.RegistrationTests" time="0.11">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=RegistrationTests.testFillInformationRegistrationPage(java.lang.String, java.lang.String, boolean)[pri:0, instance:com.romanceabroad.ui.RegistrationTests@2758fe70] output={null}]](0)" classname="com.romanceabroad.ui.RegistrationTests" time="0.069">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="setup[chrome, 59.0, Windows 10, null, public void com.romanceabroad.ui.RegistrationTests.testFillInformationRegistrationPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)](0)" classname="com.romanceabroad.ui.RegistrationTests" time="0.077">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+  <testcase name="afterActions[[TestResult name={null} status=CREATED method=RegistrationTests.testFillInformationRegistrationPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.romanceabroad.ui.RegistrationTests@2758fe70] output={null}]](0)" classname="com.romanceabroad.ui.RegistrationTests" time="0.389">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+]]></failure>
+  </testcase>
+</testsuite>

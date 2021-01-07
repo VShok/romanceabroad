@@ -43,7 +43,7 @@ public class BaseUI {
 
 
     @BeforeMethod(groups = {"user", "admin"}, alwaysRun = true)
-    @Parameters({"browser", "version", "platform", "testbox"})
+    @Parameters({"browser", "version", "platform", "testBox"})
 
     public void setup(@Optional("chrome") String browser,@Optional("null") String version,@Optional("null") String platform,@Optional("null") String box, Method method) throws MalformedURLException {
 
@@ -93,7 +93,7 @@ public class BaseUI {
                 capabilities.setCapability("version", version);
                 capabilities.setCapability("name", method.getName());
                 driver = new RemoteWebDriver(
-                        new URL("https//" + System.getenv("SAUCE_USERNAME") + ":" + System.getenv("SAUCE_ACCESS_KEY") + "@ondemand.us-west-1.saucelabs.com:443/wd/hub"),
+                        new URL("https://recreant:9789592c-10d1-4d12-8055-c861fc5bc38d@ondemand.us-west-1.saucelabs.com:443/wd/hub"),
                         capabilities);
                 break;
         }
