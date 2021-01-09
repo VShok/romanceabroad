@@ -22,9 +22,9 @@ public class DataProviders {
     @DataProvider(name = "Registration2")
     public static Object[][] testRegistration2() {
         return new Object[][]{
-                {Data.email1, Data.username, true},
-                {Data.email2, Data.username, false},
-                {Data.email3, Data.username, true}
+                {Data.email1, Data.username, true}
+                //{Data.email2, Data.username, false},
+                //{Data.email3, Data.username, true}
         };
 
     }

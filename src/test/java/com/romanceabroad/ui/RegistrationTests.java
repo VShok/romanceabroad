@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 public class RegistrationTests extends BaseUI {
 
-    public static final boolean testCase1 = true;
+    public static final boolean testCase1 = false;
     public static final boolean testCase18 = true;
     @Video(name="Registration test")
    @Test(dataProvider = "Registration", enabled = testCase1, groups = {"user", "admin"}, dataProviderClass = DataProviders.class)

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestSuite" duration-ms="19466" started-at="2021-01-07T11:08:56 CST" finished-at="2021-01-07T11:09:15 CST">
+    <groups>
+      <group name="admin">
+        <method signature="GiftsTests.testGiftsLink()[pri:0, instance:com.romanceabroad.ui.GiftsTests@335eadca]" name="testGiftsLink" class="com.romanceabroad.ui.GiftsTests"/>
+      </group> <!-- admin -->
+      <group name="user">
+        <method signature="GiftsTests.testGiftsLink()[pri:0, instance:com.romanceabroad.ui.GiftsTests@335eadca]" name="testGiftsLink" class="com.romanceabroad.ui.GiftsTests"/>
+      </group> <!-- user -->
+    </groups>
+    <test name="ChromeTestCases" duration-ms="19466" started-at="2021-01-07T11:08:56 CST" finished-at="2021-01-07T11:09:15 CST">
+      <class name="com.romanceabroad.ui.GiftsTests">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.romanceabroad.ui.GiftsTests@335eadca]" name="setup" is-config="true" duration-ms="13893" started-at="2021-01-07T11:08:56 CST" finished-at="2021-01-07T11:09:10 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[87.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mac]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sauce]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[public void com.romanceabroad.ui.GiftsTests.testGiftsLink()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testGiftsLink()[pri:0, instance:com.romanceabroad.ui.GiftsTests@335eadca]" name="testGiftsLink" duration-ms="4937" started-at="2021-01-07T11:09:10 CST" finished-at="2021-01-07T11:09:15 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGiftsLink -->
+        <test-method status="PASS" signature="afterActions(org.testng.ITestResult)[pri:0, instance:com.romanceabroad.ui.GiftsTests@335eadca]" name="afterActions" is-config="true" duration-ms="584" started-at="2021-01-07T11:09:15 CST" finished-at="2021-01-07T11:09:15 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGiftsLink status=SUCCESS method=GiftsTests.testGiftsLink()[pri:0, instance:com.romanceabroad.ui.GiftsTests@335eadca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterActions -->
+      </class> <!-- com.romanceabroad.ui.GiftsTests -->
+    </test> <!-- ChromeTestCases -->
+  </suite> <!-- TestSuite -->
+</testng-results>

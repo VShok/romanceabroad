@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="Mobile Test Suite" parallel="none">
+    <test name="Pixel 2 XL tests">
+        
+        <parameter name="browser" value="chrome"/>
+        <parameter name="testBox" value="mobile"/>
+        <parameter name="deviceName" value="Pixel 2 XL"></parameter>
+
+            <classes>
+                <class name="com.romanceabroad.ui.RegistrationTests"/>
+            </classes>
+        
+    </test>
+    <test name="iPhone 6/7/8 Plus tests">
+
+        <parameter name="browser" value="chrome"/>
+        <parameter name="testBox" value="mobile"/>
+        <parameter name="deviceName" value="iPhone 6/7/8 Plus"></parameter>
+
+        <classes>
+            <class name="com.romanceabroad.ui.RegistrationTests"/>
+        </classes>
+
+    </test>
+    <test name="Ipad Pro tests">
+
+        <parameter name="browser" value="chrome"/>
+        <parameter name="testBox" value="mobile"/>
+        <parameter name="deviceName" value="Ipad Pro"></parameter>
+
+        <classes>
+            <class name="com.romanceabroad.ui.RegistrationTests"></class>
+        </classes>
+
+    </test>
+</suite>
