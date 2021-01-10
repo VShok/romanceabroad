@@ -1,6 +1,8 @@
 package com.romanceabroad.ui;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.ITestContext;
 import org.testng.annotations.Test;
 import com.automation.remarks.testng.VideoListener;
 import com.automation.remarks.video.annotations.Video;
@@ -18,6 +20,7 @@ public class PrettyWomenTests extends BaseUI {
     public static final boolean testCase18 = true;
     public static final boolean testCase20 = true;
     public static final boolean testCase21 = true;
+    public static final boolean testCase22 = true;
 
     @Test(priority = 1, enabled = testCase2, groups = {"user", "admin"})
     public void testPrettyWomenLink() {
@@ -84,6 +87,8 @@ public class PrettyWomenTests extends BaseUI {
 
     @Test(priority = 5, enabled = testCase20, groups = {"user", "admin"})
     public void testUserProfile() {
+        mainPage.clickMobileMenu2();
+        mainPage.javaWaitSec(2);
         mainPage.clickPrettyWomenLink();
         driver.findElement(Locators.USER_PROFILE).click();
         mainPage.javaWaitSec(2);
@@ -139,6 +144,20 @@ public class PrettyWomenTests extends BaseUI {
             mainPage.javaWaitSec(1);
             driver.navigate().back();
             footerLinks = driver.findElements(Locators.LINKS_FOOTER);
+        }
+    }
+
+    @Test(priority = 7, enabled = testCase22, groups = {"user", "admin"})
+    public void selectRandomDropDownListTestsOnSearchPage() {
+        mainPage.clickMobileMenu(valueOfBox);
+        mainPage.scrollToBottomOfPage();
+        prettyWomenPage.clickPrettyWomenLink();
+        int sizeOfDropDownListSortBy = prettyWomenPage.getSizeDropDownList(Locators.FILTER_MAX_AGE);
+        System.out.println(sizeOfDropDownListSortBy);
+        prettyWomenPage.clickSearchParameters(valueOfBox);
+        for (int i = 0; i < 2; i++) {
+            prettyWomenPage.selectItemDropDownRandomOption(Locators.FILTER_MAX_AGE, "Sort By");
+            mainPage.javaWaitSec(3);
         }
     }
 }

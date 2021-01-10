@@ -1,24 +1,24 @@
 package com.romanceabroad.ui;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
-import org.testng.asserts.SoftAssert;
+        import org.openqa.selenium.WebDriver;
+        import org.openqa.selenium.chrome.ChromeDriver;
+        import org.openqa.selenium.chrome.ChromeOptions;
+        import org.openqa.selenium.firefox.FirefoxDriver;
+        import org.openqa.selenium.remote.DesiredCapabilities;
+        import org.openqa.selenium.remote.RemoteWebDriver;
+        import org.openqa.selenium.support.ui.WebDriverWait;
+        import org.testng.ITestResult;
+        import org.testng.annotations.AfterMethod;
+        import org.testng.annotations.BeforeMethod;
+        import org.testng.annotations.Optional;
+        import org.testng.annotations.Parameters;
+        import org.testng.asserts.SoftAssert;
 
-import java.lang.reflect.Method;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
+        import java.lang.reflect.Method;
+        import java.net.MalformedURLException;
+        import java.net.URL;
+        import java.util.HashMap;
+        import java.util.Map;
 
 
 public class BaseUI {
@@ -41,6 +41,7 @@ public class BaseUI {
 
     protected TestBox testBox;
     protected TestBrowser testBrowser;
+    protected String valueOfBox;
 
     protected enum TestBox {
         WEB, MOBILE, SAUCE
@@ -56,9 +57,12 @@ public class BaseUI {
 
 
     @BeforeMethod(groups = {"user", "admin"}, alwaysRun = true)
-    @Parameters({"browser", "version", "platform", "testBox", "deviceName"})
+    @Parameters({"browser", "version", "platform", "testBox", "deviceName", "testEnv"})
 
-    public void setup(@Optional("chrome") String browser, @Optional("null") String version, @Optional("null") String platform, @Optional("web") String box, @Optional("null") String device, Method method) throws MalformedURLException {
+    public void setup(@Optional("chrome") String browser,
+                      @Optional("null") String version, @Optional("null") String platform,
+                      @Optional("web") String box, @Optional("null") String device,
+                      @Optional("qa") String env, Method method) throws MalformedURLException {
 
         Reports.start(method.getDeclaringClass().getName() + " : " + method.getName());
 
@@ -113,14 +117,14 @@ public class BaseUI {
             case MOBILE:
                 switch (testBrowser) {
                     case CHROME:
-                    Map<String, String> mobileEmulation = new HashMap<String, String>();
-                    mobileEmulation.put("deviceName", "Pixel 2 XL");
-                    options = new ChromeOptions();
-                    options.setExperimentalOption("mobileEmulation", mobileEmulation);
-                    System.setProperty("webdriver.chrome.driver", "chromedriver");
-                    driver = new ChromeDriver(options);
-                    driver.get("chrome://settings/clearBrowserData");
-                    break;
+                        Map<String, String> mobileEmulation = new HashMap<String, String>();
+                        mobileEmulation.put("deviceName", "Pixel 2 XL");
+                        options = new ChromeOptions();
+                        options.setExperimentalOption("mobileEmulation", mobileEmulation);
+                        System.setProperty("webdriver.chrome.driver", "chromedriver");
+                        driver = new ChromeDriver(options);
+                        driver.get("chrome://settings/clearBrowserData");
+                        break;
                 }
                 break;
 
@@ -148,6 +152,16 @@ public class BaseUI {
         signInPage = new SignInPage(driver, wait);
         contactUsPage = new ContactUsPage(driver, wait);
         driver.get(mainUrl);
+
+        if (env.contains("qa")) {
+            driver.get(Data.MAIN_URL);
+        } else if (env.contains("uat")){
+            driver.get("https://www.google.com/");
+        } else if (env.contains("prod")) {
+            driver.get("https://www.yahoo.com/");
+        }
+
+        valueOfBox = box;
     }
 
     @AfterMethod(groups = {"user", "admin"}, alwaysRun = true)
@@ -158,6 +172,6 @@ public class BaseUI {
         }
         Reports.stop();
 
-        driver.quit();
+        //driver.quit();
     }
 }

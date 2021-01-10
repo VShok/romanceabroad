@@ -9,6 +9,7 @@
         <parameter name="browser" value="chrome"/>
         <parameter name="testBox" value="web"/>
         <parameter name="platform" value="Mac"/>
+        <parameter name="testEnv" value="prod"/>
 
         <groups>
             <run>

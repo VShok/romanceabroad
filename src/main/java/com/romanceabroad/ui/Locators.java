@@ -3,8 +3,10 @@ package com.romanceabroad.ui;
 import org.openqa.selenium.By;
 
 public class Locators {
+
     // Main Page
 
+    public static final By MOBILE_MENU = By.xpath("//span[@class='navbar-toggler-icon']");
     public static final By FRAME_HOME_PAGE_YOUTUBE = By.xpath("//iframe[@src='https://www.youtube.com/embed/RRECuJzm3IY?start=85']");
     public static final By BUTTON_HOME_PAGE_YOUTUBE = By.xpath("//button[@class='ytp-large-play-button ytp-button']");
     public static final By TITLE_HOME_PAGE = By.xpath("//a[contains(text(),'HOME')]");
@@ -80,6 +82,8 @@ public class Locators {
     public static final By TEXT_USER_INFO = By.xpath("//div[@class='text-overflow']");
     public static final By USER_PROFILE = By.xpath("//a[@class='g-users-gallery__name'][@href='https://romanceabroad.com/users/view/360/profile']");
     public static final By TAB_PRETTY_WOMEN_PROFILE = By.xpath("//div[@class='profile-menu clearfix']//ul/li");
+    public static final By MOBILE_LINK_SEARCH_PARAMETERS = By.xpath("//div[@class='search-param-button mb10']//a");
+
 
     // Sigh In Form
 
