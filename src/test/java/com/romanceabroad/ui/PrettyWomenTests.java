@@ -14,12 +14,12 @@ import java.util.List;
 public class PrettyWomenTests extends BaseUI {
 
     String currentUrlSearch;
-    public static final boolean testCase2 = true;
-    public static final boolean testCase3 = true;
-    public static final boolean testCase4 = true;
-    public static final boolean testCase18 = true;
-    public static final boolean testCase20 = true;
-    public static final boolean testCase21 = true;
+    public static final boolean testCase2 = false;
+    public static final boolean testCase3 = false;
+    public static final boolean testCase4 = false;
+    public static final boolean testCase18 = false;
+    public static final boolean testCase20 = false;
+    public static final boolean testCase21 = false;
     public static final boolean testCase22 = true;
 
     @Test(priority = 1, enabled = testCase2, groups = {"user", "admin"})

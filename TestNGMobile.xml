@@ -14,7 +14,7 @@
             </classes>
         
     </test>
-    <test name="iPhone 6/7/8 Plus tests">
+    <!--test name="iPhone 6/7/8 Plus tests">
 
         <parameter name="browser" value="chrome"/>
         <parameter name="testBox" value="mobile"/>
@@ -35,5 +35,5 @@
             <class name="com.romanceabroad.ui.RegistrationTests"></class>
         </classes>
 
-    </test>
+    </test!-->
 </suite>

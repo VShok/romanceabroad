@@ -16,7 +16,7 @@ public class GiftsTests extends BaseUI {
 
     @Test(enabled = testCase15, groups = {"user", "admin"})
     public void testGiftsLink () {
-
+        mainPage.javaWait(3);
         mainPage.clickGiftsLink();
         currentUrlSearch = driver.getCurrentUrl();
         System.out.println(currentUrlSearch);
