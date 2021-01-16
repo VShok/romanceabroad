@@ -6,6 +6,7 @@ package com.romanceabroad.ui;
         import org.openqa.selenium.firefox.FirefoxDriver;
         import org.openqa.selenium.remote.DesiredCapabilities;
         import org.openqa.selenium.remote.RemoteWebDriver;
+        import org.openqa.selenium.support.PageFactory;
         import org.openqa.selenium.support.ui.WebDriverWait;
         import org.testng.ITestResult;
         import org.testng.annotations.AfterMethod;
@@ -50,7 +51,7 @@ public class BaseUI {
     ;
 
     protected enum TestBrowser {
-        CHROME, FIREFOX
+        CHROME, FIREFOX, REMOTE_CHROME
     }
 
     ;
@@ -78,6 +79,8 @@ public class BaseUI {
             testBrowser = TestBrowser.CHROME;
         } else if (box.equalsIgnoreCase("firefox")) {
             testBrowser = TestBrowser.FIREFOX;
+        } else if (box.equalsIgnoreCase("remoteChrome")) {
+            testBrowser = TestBrowser.REMOTE_CHROME;
         }
 
         switch (testBox) {
@@ -100,6 +103,12 @@ public class BaseUI {
                         options.addArguments("--kiosk");
                         driver = new ChromeDriver(options);
                         driver.get("chrome://settings/clearBrowserData");
+                        break;
+                    case REMOTE_CHROME:
+                        System.out.println("Remote Chrome");
+                        options = new ChromeOptions();
+                        options.addArguments("--headless");
+                        driver = new RemoteWebDriver(new URL("http://localhost:4445/wd/hub"), options);
                         break;
 
                     default:
@@ -152,6 +161,8 @@ public class BaseUI {
         signInPage = new SignInPage(driver, wait);
         contactUsPage = new ContactUsPage(driver, wait);
         driver.get(mainUrl);
+
+        PageFactory.initElements(driver, mainPage);
 
         if (env.contains("qa")) {
             driver.get(Data.MAIN_URL);

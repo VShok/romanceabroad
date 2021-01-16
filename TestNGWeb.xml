@@ -6,9 +6,9 @@
 
     <test name="ChromeTestCases">
         <parameter name="version" value="77.0"/>
-        <parameter name="browser" value="chrome"/>
-        <parameter name="testBox" value="sauce"/>
-        <parameter name="platform" value="Windows 10"/>
+        <parameter name="browser" value="remoteChrome"/>
+        <parameter name="testBox" value="web"/>
+        <parameter name="platform" value="Mac"/>
         <parameter name="testEnv" value="qa"/>
 
         <groups>

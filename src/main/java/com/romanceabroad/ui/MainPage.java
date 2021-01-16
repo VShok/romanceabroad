@@ -2,11 +2,15 @@ package com.romanceabroad.ui;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.concurrent.TimeUnit;
 
 public class MainPage extends BaseActions {
+
+    @FindBy(css = "#show-registration-block")
+    WebElement registrationButton;
 
     public MainPage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
@@ -104,7 +108,7 @@ public class MainPage extends BaseActions {
 
     public void clickRegistrationButton() {
         Reports.log("Click Join button");
-        driver.findElement(Locators.BUTTON_REGISTRATION).click();
+        registrationButton.click();
     }
     public void fillInEmailAndPassword(String email, String password) {
         Reports.log("Type email in the text field" + email);
