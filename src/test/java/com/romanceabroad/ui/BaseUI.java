@@ -77,9 +77,9 @@ public class BaseUI {
 
         if (browser.equalsIgnoreCase("chrome")) {
             testBrowser = TestBrowser.CHROME;
-        } else if (box.equalsIgnoreCase("firefox")) {
+        } else if (browser.equalsIgnoreCase("firefox")) {
             testBrowser = TestBrowser.FIREFOX;
-        } else if (box.equalsIgnoreCase("remoteChrome")) {
+        } else if (browser.equalsIgnoreCase("remoteChrome")) {
             testBrowser = TestBrowser.REMOTE_CHROME;
         }
 
@@ -107,8 +107,8 @@ public class BaseUI {
                     case REMOTE_CHROME:
                         System.out.println("Remote Chrome");
                         options = new ChromeOptions();
-                        options.addArguments("--headless");
-                        driver = new RemoteWebDriver(new URL("http://localhost:4445/wd/hub"), options);
+                        //options.addArguments("--headless");
+                        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
                         break;
 
                     default:
