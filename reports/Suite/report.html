@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jan 17, 2021 09:35:55 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jan 18, 2021 07:06:33 PM</span>
 				</a>
 			</li>
 			<li>
@@ -71,7 +71,8 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li class='divider'></li>
+											<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
 			</div>
@@ -121,14 +122,28 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='80%'><span class='strong'>16</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='20%'>4</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
 		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>4</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
 		
 	</div>
 </div>
@@ -142,16 +157,404 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>com.romanceabroad.ui.GiftsTests : testGiftsLink</span>
-						<span class='test-time'>Jan 17, 2021 09:35:55 PM</span>
+						<span class='test-name'>com.romanceabroad.ui.SignInTests : password</span>
+						<span class='test-time'>Jan 18, 2021 07:06:33 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 17, 2021 09:35:55 PM</span>
-	<span class='label end-time'>Jan 17, 2021 09:35:55 PM</span>
+	<span class='label start-time'>Jan 18, 2021 07:06:33 PM</span>
+	<span class='label end-time'>Jan 18, 2021 07:06:33 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>com.romanceabroad.ui.SignInTests : password</span>
+						<span class='test-time'>Jan 18, 2021 07:06:48 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 18, 2021 07:06:48 PM</span>
+	<span class='label end-time'>Jan 18, 2021 07:06:48 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>com.romanceabroad.ui.SignInTests : password</span>
+						<span class='test-time'>Jan 18, 2021 07:07:03 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 18, 2021 07:07:03 PM</span>
+	<span class='label end-time'>Jan 18, 2021 07:07:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>com.romanceabroad.ui.SignInTests : password</span>
+						<span class='test-time'>Jan 18, 2021 07:07:18 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 18, 2021 07:07:18 PM</span>
+	<span class='label end-time'>Jan 18, 2021 07:07:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>com.romanceabroad.ui.SignInTests : password</span>
+						<span class='test-time'>Jan 18, 2021 07:07:31 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 18, 2021 07:07:31 PM</span>
+	<span class='label end-time'>Jan 18, 2021 07:07:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>com.romanceabroad.ui.SignInTests : password</span>
+						<span class='test-time'>Jan 18, 2021 07:07:44 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 18, 2021 07:07:44 PM</span>
+	<span class='label end-time'>Jan 18, 2021 07:07:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>com.romanceabroad.ui.SignInTests : password</span>
+						<span class='test-time'>Jan 18, 2021 07:07:56 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 18, 2021 07:07:56 PM</span>
+	<span class='label end-time'>Jan 18, 2021 07:07:56 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>com.romanceabroad.ui.SignInTests : password</span>
+						<span class='test-time'>Jan 18, 2021 07:08:07 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 18, 2021 07:08:07 PM</span>
+	<span class='label end-time'>Jan 18, 2021 07:08:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>com.romanceabroad.ui.SignInTests : password</span>
+						<span class='test-time'>Jan 18, 2021 07:08:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 18, 2021 07:08:20 PM</span>
+	<span class='label end-time'>Jan 18, 2021 07:08:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>com.romanceabroad.ui.SignInTests : password</span>
+						<span class='test-time'>Jan 18, 2021 07:08:31 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 18, 2021 07:08:31 PM</span>
+	<span class='label end-time'>Jan 18, 2021 07:08:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>com.romanceabroad.ui.SignInTests : password</span>
+						<span class='test-time'>Jan 18, 2021 07:08:43 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 18, 2021 07:08:43 PM</span>
+	<span class='label end-time'>Jan 18, 2021 07:08:43 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>com.romanceabroad.ui.SignInTests : password</span>
+						<span class='test-time'>Jan 18, 2021 07:08:55 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 18, 2021 07:08:55 PM</span>
+	<span class='label end-time'>Jan 18, 2021 07:08:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>com.romanceabroad.ui.SignInTests : password</span>
+						<span class='test-time'>Jan 18, 2021 07:09:13 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 18, 2021 07:09:13 PM</span>
+	<span class='label end-time'>Jan 18, 2021 07:09:29 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+926ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:09:29 PM</td>
+					<td class='step-details'>Failed step: null</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/victorshokurov/Desktop/GitHub/romanceabroad/reports/Suite/fail_password.png' width='10%' src='/Users/victorshokurov/Desktop/GitHub/romanceabroad/reports/Suite/fail_password.png' data-src='/Users/victorshokurov/Desktop/GitHub/romanceabroad/reports/Suite/fail_password.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>com.romanceabroad.ui.SignInTests : password</span>
+						<span class='test-time'>Jan 18, 2021 07:09:29 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 18, 2021 07:09:29 PM</span>
+	<span class='label end-time'>Jan 18, 2021 07:09:29 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>com.romanceabroad.ui.SignInTests : password</span>
+						<span class='test-time'>Jan 18, 2021 07:09:48 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 18, 2021 07:09:48 PM</span>
+	<span class='label end-time'>Jan 18, 2021 07:09:48 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>com.romanceabroad.ui.SignInTests : password</span>
+						<span class='test-time'>Jan 18, 2021 07:10:06 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 18, 2021 07:10:06 PM</span>
+	<span class='label end-time'>Jan 18, 2021 07:10:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+501ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:10:25 PM</td>
+					<td class='step-details'>Failed step: null</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/victorshokurov/Desktop/GitHub/romanceabroad/reports/Suite/fail_password.png' width='10%' src='/Users/victorshokurov/Desktop/GitHub/romanceabroad/reports/Suite/fail_password.png' data-src='/Users/victorshokurov/Desktop/GitHub/romanceabroad/reports/Suite/fail_password.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>com.romanceabroad.ui.SignInTests : password</span>
+						<span class='test-time'>Jan 18, 2021 07:10:26 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 18, 2021 07:10:26 PM</span>
+	<span class='label end-time'>Jan 18, 2021 07:10:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>com.romanceabroad.ui.SignInTests : password</span>
+						<span class='test-time'>Jan 18, 2021 07:10:41 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 18, 2021 07:10:41 PM</span>
+	<span class='label end-time'>Jan 18, 2021 07:10:59 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+758ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:10:59 PM</td>
+					<td class='step-details'>Failed step: null</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/victorshokurov/Desktop/GitHub/romanceabroad/reports/Suite/fail_password.png' width='10%' src='/Users/victorshokurov/Desktop/GitHub/romanceabroad/reports/Suite/fail_password.png' data-src='/Users/victorshokurov/Desktop/GitHub/romanceabroad/reports/Suite/fail_password.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>com.romanceabroad.ui.SignInTests : password</span>
+						<span class='test-time'>Jan 18, 2021 07:11:00 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 18, 2021 07:11:00 PM</span>
+	<span class='label end-time'>Jan 18, 2021 07:11:00 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>com.romanceabroad.ui.SignInTests : password</span>
+						<span class='test-time'>Jan 18, 2021 07:11:18 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 18, 2021 07:11:18 PM</span>
+	<span class='label end-time'>Jan 18, 2021 07:11:36 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+607ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:11:36 PM</td>
+					<td class='step-details'>Failed step: null</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='/Users/victorshokurov/Desktop/GitHub/romanceabroad/reports/Suite/fail_password.png' width='10%' src='/Users/victorshokurov/Desktop/GitHub/romanceabroad/reports/Suite/fail_password.png' data-src='/Users/victorshokurov/Desktop/GitHub/romanceabroad/reports/Suite/fail_password.png'></li>
+							</ul>
 					</div>
 				</li>
 			</ul>
@@ -189,31 +592,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>20</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>0</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 17, 2021 09:35:55 PM</div>
+					<div class='panel-lead'>Jan 18, 2021 07:06:33 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 17, 2021 09:36:25 PM</div>
+			 		<div class='panel-lead'>Jan 18, 2021 07:11:36 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 30s+368ms</div>
+					<div class='panel-lead'>0h 5m 3s+171ms</div>
 				</div>
 			</div>
 		</div>
@@ -226,22 +629,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 0,
+				passParent: 16,
+				failParent: 4,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 4,
 				
 				passChild: 0,
-				failChild: 0,
+				failChild: 4,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 4,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

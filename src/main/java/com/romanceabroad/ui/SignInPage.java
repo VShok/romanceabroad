@@ -16,6 +16,12 @@ public class SignInPage extends BaseActions {
         linkLoginPassword.sendKeys(password);
     }
 
+    public void fillInSignInForm(String password) {
+        driver.findElement(Locators.LINK_LOGIN_EMAIL).sendKeys(Data.email1);
+        driver.findElement(Locators.LINK_LOGIN_PASSWORD).sendKeys(password);
+        driver.findElement(Locators.BUTTON_SIGN_IN_SUBMIT).click();
+    }
+
     public String getCurrentTitle () {
         String title = driver.findElement(Locators.TITLE_LOGIN).getText();
         System.out.println(title);

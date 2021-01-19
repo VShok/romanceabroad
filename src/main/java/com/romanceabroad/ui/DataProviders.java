@@ -48,4 +48,31 @@ public class DataProviders {
                 {"manthesky@gmail.com","ooaxoamaooom450941!", true}
         };
     }
+
+    @DataProvider(name = "NewRequirementsForPassword")
+    public static Object[][] newRequirementsForPasswords() {
+        return new Object[][] {
+                {"Boston1!", true},
+                {"Boston2@", true},
+                {"#Boston3", true},
+                {"$Boston4", true},
+                {"Bos%ton5", true},
+                {"B^os6ton", true},
+                {"7Bosto&n", true},
+                {"Mia12**mi", true},
+                {"Miami*-(13)", true},
+                {"Miami*-14", true},
+                {"Mi+am19i", true},
+                {"Utah", false},
+                {"***", false},
+                {"56986545", false},
+                {"worthless", false},
+                {"Mean450941)", false},
+                {"worthle98ss", false},
+                {"porlock09", false},
+                {"lowerc:9", false},
+                {"DUSSELDORF1!", false}
+
+        };
+    }
 }

@@ -90,6 +90,8 @@ public class Locators {
     public static final By LINK_SIGN_IN = By.xpath("//a[@href='https://romanceabroad.com/users/login_form']");
     public static final By LINK_LOGIN_EMAIL = By.xpath("//form[@action='https://romanceabroad.com/users/login']//input[@id='email']");
     public static final By LINK_LOGIN_PASSWORD = By.xpath("//form[@action='https://romanceabroad.com/users/login']//input[@id='password']");
+    public static final By BUTTON_SIGN_IN_SUBMIT = By.xpath("//button[@name='logbtn']");
+    public static final By ALERT_WRONG_PASSWORD = By.xpath("//div[@class='error alert-danger alert-warning_pop_']");
     public static final By TITLE_LOGIN = By.xpath("//div[@class='pg-modal']//h1");
 
     // Blog Page
